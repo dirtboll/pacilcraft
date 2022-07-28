@@ -1,0 +1,53 @@
+version: '3.8'
+services:
+  pacilkrep:
+    image: itzg/minecraft-server
+    container_name: pacilkrep
+    environment:
+      EULA: "true"
+      TYPE: "PURPUR"
+      TZ: "Asia/Jakarta"
+      CONSOLE: "false"
+      STOP_SERVER_ANNOUNCE_DELAY: 60
+      OVERRIDE_SERVER_PROPERTIES: "true"
+      ENABLE_AUTOPAUSE: "true"
+      VERSION: "${VERSION:-LATEST}"
+      PURPUR_BUILD: "${PURPUR_BUILD:-LATEST}"
+      
+      MEMORY: "4G"
+    #   JVM_XX_OPTS: "-XX:MaxRAMPercentage=75"
+      JVM_DD_OPTS: "disable.watchdog:true" #Paper
+      USE_AIKAR_FLAGS: "true"
+      ENABLE_ROLLING_LOGS: "true"
+      STOP_DURATION: 120
+      USE_SIMD_FLAGS: "true"
+      LOG_TIMESTAMP: "true"
+
+      SERVER_NAME: "PacilCraft"
+      MAX_TICK_TIME: "-1" #For autopause to work
+      MOTD: "Welcome to pacilcraft!"
+      DIFFICULTY: "hard"
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: "${RCON_PASSWORD:-pacilkrep}"
+      MAX_PLAYERS: 100
+      ENABLE_COMMAND_BLOCK: "true"
+      ONLINE_MODE: "false"
+      SPAWN_PROTECTION: 16
+
+      SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135,2124"
+      MODS: "/extras/Iris.jar,https://dev.bukkit.org/projects/drivebackupv2/files/latest,https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar"
+      VANILLATWEAKS_SHARECODE: "Ex94oj,VraaEs,xw1cUu,ygiI6V"
+      REMOVE_OLD_VANILLATWEAKS: "TRUE"
+      RESOURCE_PACK: "https://vanillatweaks.net/download/VanillaTweaks_r919041.zip"
+    ports:
+      - 25565:25565
+    volumes:
+      - ./data:/data
+      - ./Iris.jar:/extras/Iris.jar
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    # deploy:
+    #   resources:
+    #     limits:
+    #       memory: 6000M
