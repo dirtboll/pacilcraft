@@ -34,7 +34,7 @@ services:
       ONLINE_MODE: "FALSE"
       SPAWN_PROTECTION: 16
 
-      SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135,2124"
+      SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135"
       MODS: >- 
         /extras/mods/Iris.jar,
         https://dev.bukkit.org/projects/drivebackupv2/files/latest,
@@ -43,6 +43,7 @@ services:
         https://dev.bukkit.org/projects/worldguard/files/latest,
         https://ci.athion.net/job/FastAsyncWorldEdit/lastStableBuild/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.3-SNAPSHOT-251.jar
         https://dev.bukkit.org/projects/beaconwaypoints/files/latest
+        https://ci.codemc.io/job/SkinsRestorer/job/SkinsRestorerX-DEV/lastSuccessfulBuild/artifact/build/libs/SkinsRestorer.jar
       VANILLATWEAKS_SHARECODE: "Ex94oj,VraaEs,ygiI6V"
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
       RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
@@ -51,12 +52,12 @@ services:
         /extras/datapacks/Trumpet-Skeleton-[datapack]-v1.0.0.zip
 
         
-      RCON_CMDS_STARTUP: |-
-        iris pregen start 1000 world=otherworld
-      RCON_CMDS_LAST_DISCONNECT: |-
-        iris pregen start 1000 world=otherworld
-      RCON_CMDS_FIRST_CONNECT: |-
-        iris pregen stop
+      # RCON_CMDS_STARTUP: |-
+      #   iris pregen start 1000 world=otherworld
+      # RCON_CMDS_LAST_DISCONNECT: |-
+      #   iris pregen start 1000 world=otherworld
+      # RCON_CMDS_FIRST_CONNECT: |-
+      #   iris pregen stop
     ports:
       - 25565:25565
     volumes:
