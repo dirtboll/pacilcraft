@@ -35,10 +35,11 @@ services:
       SPAWN_PROTECTION: 16
 
       SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135,2124"
-      MODS: "/extras/Iris.jar,https://dev.bukkit.org/projects/drivebackupv2/files/latest,https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar"
-      VANILLATWEAKS_SHARECODE: "Ex94oj,VraaEs,xw1cUu,ygiI6V"
+      MODS: "/extras/Iris.jar,https://dev.bukkit.org/projects/drivebackupv2/files/latest,https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,https://dev.bukkit.org/projects/worldguard/files/latest"
+      VANILLATWEAKS_SHARECODE: "Ex94oj,VraaEs,ygiI6V"
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
-      RESOURCE_PACK: "https://vanillatweaks.net/download/VanillaTweaks_r919041.zip"
+      RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
+      RESOURCE_PACK_SHA1: ec9fd23ae090519ffd6662c71134d6929e88c8c8
     ports:
       - 25565:25565
     volumes:
