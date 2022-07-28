@@ -4,49 +4,62 @@ services:
     image: itzg/minecraft-server
     container_name: pacilkrep
     environment:
-      EULA: "true"
+      EULA: "TRUE"
       TYPE: "PURPUR"
       TZ: "Asia/Jakarta"
-      CONSOLE: "false"
+      CONSOLE: "FALSE"
       STOP_SERVER_ANNOUNCE_DELAY: 60
-      OVERRIDE_SERVER_PROPERTIES: "true"
-      ENABLE_AUTOPAUSE: "true"
+      OVERRIDE_SERVER_PROPERTIES: "TRUE"
       VERSION: "${VERSION:-LATEST}"
       PURPUR_BUILD: "${PURPUR_BUILD:-LATEST}"
       
-      MEMORY: "4G"
-    #   JVM_XX_OPTS: "-XX:MaxRAMPercentage=75"
-      JVM_DD_OPTS: "disable.watchdog:true" #Paper
-      USE_AIKAR_FLAGS: "true"
-      ENABLE_ROLLING_LOGS: "true"
-      STOP_DURATION: 120
-      USE_SIMD_FLAGS: "true"
-      LOG_TIMESTAMP: "true"
+      MEMORY: "6G"
+      # JVM_XX_OPTS: "-XX:MaxRAMPercentage=75"
+      JVM_DD_OPTS: "disable.watchdog:TRUE" #Paper
+      USE_AIKAR_FLAGS: "TRUE"
+      ENABLE_ROLLING_LOGS: "TRUE"
+      ENABLE_AUTOPAUSE: "FALSE"
+      STOP_DURATION: 300
+      USE_SIMD_FLAGS: "TRUE"
+      LOG_TIMESTAMP: "TRUE"
 
       SERVER_NAME: "PacilCraft"
       MAX_TICK_TIME: "-1" #For autopause to work
       MOTD: "Welcome to pacilcraft!"
       DIFFICULTY: "hard"
-      ENABLE_RCON: "true"
+      ENABLE_RCON: "TRUE"
       RCON_PASSWORD: "${RCON_PASSWORD:-pacilkrep}"
       MAX_PLAYERS: 100
-      ENABLE_COMMAND_BLOCK: "true"
-      ONLINE_MODE: "false"
+      ENABLE_COMMAND_BLOCK: "TRUE"
+      ONLINE_MODE: "FALSE"
       SPAWN_PROTECTION: 16
 
       SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135,2124"
-      MODS: "/extras/Iris.jar,https://dev.bukkit.org/projects/drivebackupv2/files/latest,https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,https://dev.bukkit.org/projects/worldguard/files/latest"
+      MODS: >- 
+        /extras/Iris.jar,
+        https://dev.bukkit.org/projects/drivebackupv2/files/latest,
+        https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,
+        https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,
+        https://dev.bukkit.org/projects/worldguard/files/latest,
+        https://ci.athion.net/job/FastAsyncWorldEdit/lastStableBuild/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.3-SNAPSHOT-251.jar
       VANILLATWEAKS_SHARECODE: "Ex94oj,VraaEs,ygiI6V"
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
       RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
       RESOURCE_PACK_SHA1: ec9fd23ae090519ffd6662c71134d6929e88c8c8
+
+      RCON_CMDS_STARTUP: |-
+        iris pregen start 1000 world=otherworld
+      RCON_CMDS_LAST_DISCONNECT: |-
+        iris pregen start 1000 world=otherworld
+      RCON_CMDS_FIRST_CONNECT: |-
+        iris pregen stop
     ports:
       - 25565:25565
     volumes:
       - ./data:/data
       - ./Iris.jar:/extras/Iris.jar
-    tty: true
-    stdin_open: true
+    tty: TRUE
+    stdin_open: TRUE
     restart: unless-stopped
     # deploy:
     #   resources:
