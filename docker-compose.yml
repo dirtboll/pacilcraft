@@ -48,7 +48,7 @@ services:
       RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
       RESOURCE_PACK_SHA1: 69bde9195ca0a0f53f69a3d5f3c7cf79d2715a01
       DATAPACKS: >-
-        /extras/datapacks/Trumpet Skeleton [datapack] v1.0.0.zip
+        /extras/datapacks/Trumpet-Skeleton-[datapack]-v1.0.0.zip
 
         
       RCON_CMDS_STARTUP: |-
