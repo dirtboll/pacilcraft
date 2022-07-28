@@ -36,17 +36,21 @@ services:
 
       SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135,2124"
       MODS: >- 
-        /extras/Iris.jar,
+        /extras/mods/Iris.jar,
         https://dev.bukkit.org/projects/drivebackupv2/files/latest,
         https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,
         https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,
         https://dev.bukkit.org/projects/worldguard/files/latest,
         https://ci.athion.net/job/FastAsyncWorldEdit/lastStableBuild/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.3-SNAPSHOT-251.jar
+        https://dev.bukkit.org/projects/beaconwaypoints/files/latest
       VANILLATWEAKS_SHARECODE: "Ex94oj,VraaEs,ygiI6V"
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
       RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
-      RESOURCE_PACK_SHA1: ec9fd23ae090519ffd6662c71134d6929e88c8c8
+      RESOURCE_PACK_SHA1: 69bde9195ca0a0f53f69a3d5f3c7cf79d2715a01
+      DATAPACKS: >-
+        /extras/datapacks/Trumpet Skeleton [datapack] v1.0.0.zip
 
+        
       RCON_CMDS_STARTUP: |-
         iris pregen start 1000 world=otherworld
       RCON_CMDS_LAST_DISCONNECT: |-
@@ -57,7 +61,8 @@ services:
       - 25565:25565
     volumes:
       - ./data:/data
-      - ./Iris.jar:/extras/Iris.jar
+      - ./datapacks:/extras/datapacks
+      - ./mods:/extras/mods
     tty: TRUE
     stdin_open: TRUE
     restart: unless-stopped
