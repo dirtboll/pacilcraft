@@ -34,7 +34,7 @@ services:
       ONLINE_MODE: "FALSE"
       SPAWN_PROTECTION: 16
 
-      SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135"
+      SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135,436874"
       MODS: >- 
         /extras/mods/Iris.jar,
         https://dev.bukkit.org/projects/drivebackupv2/files/latest,
@@ -44,7 +44,6 @@ services:
         https://ci.athion.net/job/FastAsyncWorldEdit/252/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.3-SNAPSHOT-252.jar
         https://dev.bukkit.org/projects/beaconwaypoints/files/latest
         https://ci.codemc.io/job/SkinsRestorer/job/SkinsRestorerX-DEV/lastSuccessfulBuild/artifact/build/libs/SkinsRestorer.jar
-        https://www.spigotmc.org/resources/armor-stand-tools.2237/download?version=436874
       VANILLATWEAKS_SHARECODE: "Ex94oj,VraaEs,ygiI6V"
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
       RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
