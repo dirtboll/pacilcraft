@@ -18,7 +18,7 @@ services:
       JVM_DD_OPTS: "disable.watchdog:TRUE" #Paper
       USE_AIKAR_FLAGS: "TRUE"
       ENABLE_ROLLING_LOGS: "TRUE"
-      ENABLE_AUTOPAUSE: "FALSE"
+      ENABLE_AUTOPAUSE: "TRUE"
       STOP_DURATION: 300
       USE_SIMD_FLAGS: "TRUE"
       LOG_TIMESTAMP: "TRUE"
@@ -41,9 +41,10 @@ services:
         https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,
         https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,
         https://dev.bukkit.org/projects/worldguard/files/latest,
-        https://ci.athion.net/job/FastAsyncWorldEdit/lastStableBuild/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.3-SNAPSHOT-251.jar
+        https://ci.athion.net/job/FastAsyncWorldEdit/252/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.3-SNAPSHOT-252.jar
         https://dev.bukkit.org/projects/beaconwaypoints/files/latest
         https://ci.codemc.io/job/SkinsRestorer/job/SkinsRestorerX-DEV/lastSuccessfulBuild/artifact/build/libs/SkinsRestorer.jar
+        https://www.spigotmc.org/resources/armor-stand-tools.2237/download?version=436874
       VANILLATWEAKS_SHARECODE: "Ex94oj,VraaEs,ygiI6V"
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
       RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
