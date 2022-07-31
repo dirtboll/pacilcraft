@@ -35,15 +35,7 @@ services:
       SPAWN_PROTECTION: 16
 
       SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135,436874"
-      MODS: >- 
-        /extras/mods/Iris.jar,
-        https://dev.bukkit.org/projects/drivebackupv2/files/latest,
-        https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,
-        https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,
-        https://dev.bukkit.org/projects/worldguard/files/latest,
-        https://ci.athion.net/job/FastAsyncWorldEdit/252/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.3-SNAPSHOT-252.jar
-        https://dev.bukkit.org/projects/beaconwaypoints/files/latest
-        https://ci.codemc.io/job/SkinsRestorer/job/SkinsRestorerX-DEV/lastSuccessfulBuild/artifact/build/libs/SkinsRestorer.jar
+      MODS_FILE: /extras/mods/mods.txt
       VANILLATWEAKS_SHARECODE: "Ex94oj,VraaEs,ygiI6V"
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
       RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
@@ -64,6 +56,8 @@ services:
       - ./data:/data
       - ./datapacks:/extras/datapacks
       - ./mods:/extras/mods
+
+      - ./modconfigs/NexAuth/config.yml:/data/plugins/NexAuth/config.yml
     tty: TRUE
     stdin_open: TRUE
     restart: unless-stopped
