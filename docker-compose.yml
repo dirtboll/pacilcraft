@@ -11,9 +11,8 @@ services:
       STOP_SERVER_ANNOUNCE_DELAY: 60
       OVERRIDE_SERVER_PROPERTIES: "TRUE"
       VERSION: "${VERSION:-LATEST}"
-      PURPUR_BUILD: "${PURPUR_BUILD:-LATEST}"
       
-      MEMORY: "6G"
+      MEMORY: "2G"
       # JVM_XX_OPTS: "-XX:MaxRAMPercentage=75"
       JVM_DD_OPTS: "disable.watchdog:TRUE" #Paper
       USE_AIKAR_FLAGS: "TRUE"
@@ -34,12 +33,29 @@ services:
       ONLINE_MODE: "FALSE"
       SPAWN_PROTECTION: 16
 
-      SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135,436874"
-      MODS_FILE: /extras/mods/mods.txt
-      VANILLATWEAKS_SHARECODE: "Ex94oj,VraaEs,ygiI6V"
+      #DiceFurniture,Dynmap,Furnlib-Protectionlib,gsit,luckperms,multiverse,nexauth,plugmanx,durability,clearlagg,CoordinatesHud,Graves,Vault,armor-stand-editor,jobs-reborn
+      SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135,74166,68271,69915,74208,34315,94503,4216" 
+      MODS: >-
+        /extras/mods
+        https://dev.bukkit.org/projects/drivebackupv2/files/latest,
+        https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,
+        https://dev.bukkit.org/projects/worldguard/files/latest,
+        https://dev.bukkit.org/projects/beaconwaypoints/files/latest,
+        https://ci.codemc.io/job/SkinsRestorer/job/SkinsRestorerX-DEV/lastSuccessfulBuild/artifact/build/libs/SkinsRestorer.jar,
+        https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsX-2.19.4.jar,
+        https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXChat-2.19.4.jar,
+        https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXSpawn-2.19.4.jar,
+        https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,
+        https://ci.athion.net/job/FastAsyncWorldEdit/252/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.3-SNAPSHOT-252.jar,
+        https://zrips.net/Residence/files/Residence5.0.1.7.jar,
+        https://dev.bukkit.org/projects/orebfuscator-anti-x-ray/files/latest,
+        https://dev.bukkit.org/projects/signshop/files/latest,
+        https://ci.codemc.io/job/Updated-NoCheatPlus/job/Updated-NoCheatPlus/lastSuccessfulBuild/artifact/target/NoCheatPlus.jar,
+        https://dev.bukkit.org/projects/crackshot/files/latest,
+      VANILLATWEAKS_FILE: /extras/vanillatweaks/datapacks.json,/extras/vanillatweaks/tweaks.json,/extras/vanillatweaks/resourcepacks.json
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
       RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
-      RESOURCE_PACK_SHA1: 69bde9195ca0a0f53f69a3d5f3c7cf79d2715a01
+      RESOURCE_PACK_SHA1: cc42214c970580dd408c0e2e28d85acc737d3c64
       DATAPACKS: >-
         /extras/datapacks/Trumpet-Skeleton-[datapack]-v1.0.0.zip
 
@@ -53,11 +69,17 @@ services:
     ports:
       - 25565:25565
     volumes:
-      - ./data:/data
       - ./datapacks:/extras/datapacks
       - ./mods:/extras/mods
+      - ./vanillatweaks:/extras/vanillatweaks
 
       - ./modconfigs/NexAuth/config.yml:/data/plugins/NexAuth/config.yml
+      - ./modconfigs/Iris/settings.json:/data/plugins/Iris/settings.json
+      - ./modconfigs/LuckPerms/config.yml:/data/plugins/LuckPerms/config.yml
+      - ./modconfigs/ClearLag/config.yml:/data/plugins/ClearLag/config.yml
+      - ./modconfigs/DurabilityAlert/config.yml:/data/plugins/DurabilityAlert/config.yml
+      - ./modconfigs/Essentials/config.yml:/data/plugins/Essentials/config.yml
+      - ./data:/data
     tty: TRUE
     stdin_open: TRUE
     restart: unless-stopped

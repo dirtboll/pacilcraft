@@ -1,0 +1,25 @@
+{
+    "type": "craftingtweaks",
+    "version": "1.18",
+    "packs": {
+        "quality of life": [
+            "double slabs",
+            "coal to black dye",
+            "charcoal to black dye",
+            "blackstone cobblestone",
+            "sandstone dyeing",
+            "universal dyeing"
+        ],
+        "craftables": [
+            "craftable horse armor",
+            "craftable name tags",
+            "craftable bundles (rabbit hide)",
+            "craftable bundles (leather)"
+        ],
+        "unpackables": [
+            "unpackable ice",
+            "unpackable nether wart",
+            "unpackable wool"
+        ]
+    }
+}
