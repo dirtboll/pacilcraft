@@ -1,0 +1,1296 @@
+Items:
+  PickaxeT1:
+    Price: 600.0
+    Icon:
+      Id: diamond_pickaxe
+      Amount: 1
+      Name: "&b&nDiamond Pickaxe"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Efficiency III"
+      - "&e● Unbreaking I"
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Miner-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Pickaxe&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_pickaxe
+        Amount: 1
+        Name: "&bDiamond Pickaxe&8 ■ &7Tier &eI"
+        Lore: []
+        Enchants:
+        - DIG_SPEED=3
+        - UNBREAKING=1
+  PickaxeT2:
+    Price: 650.0
+    Icon:
+      Id: diamond_pickaxe
+      Amount: 1
+      Name: "&b&nDiamond Pickaxe"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Efficiency IV"
+      - "&e● Unbreaking II"
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Miner-3
+    RequiredTotalLevels: 3
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Pickaxe&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_pickaxe
+        Amount: 1
+        Name: "&bDiamond Pickaxe&8 ■ &7Tier &6II"
+        Lore: []
+        Enchants:
+        - DIG_SPEED=4
+        - UNBREAKING=2
+  PickaxeT3:
+    Price: 750.0
+    Icon:
+      Id: diamond_pickaxe
+      Amount: 1
+      Name: "&b&nDiamond Pickaxe"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Efficiency V"
+      - "&e● Unbreaking III"
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Miner-4
+    RequiredTotalLevels: 4
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Pickaxe&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_pickaxe
+        Amount: 1
+        Name: "&bDiamond Pickaxe&8 ■ &7Tier &cIII"
+        Lore: []
+        Enchants:
+        - DIG_SPEED=5
+        - UNBREAKING=3
+  PickaxeT4:
+    Price: 800.0
+    Icon:
+      Id: diamond_pickaxe
+      Amount: 1
+      Name: "&b&nDiamond Pickaxe"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Efficiency IV"
+      - "&e● Unbreaking III"
+      - "&e● Fortune III"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Miner-5
+    RequiredTotalLevels: 5
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Pickaxe&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_pickaxe
+        Amount: 1
+        Name: "&bDiamond Pickaxe&8 ■ &7Tier &4IV"
+        Lore: []
+        Enchants:
+        - DIG_SPEED=4
+        - UNBREAKING=3
+        - FORTUNE=3
+  AxeT1:
+    Price: 300.0
+    Icon:
+      Id: diamond_axe
+      Amount: 1
+      Name: "&b&nDiamond Axe"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Efficiency III"
+      - "&e● Unbreaking I"
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Woodcutter-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Axe&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_axe
+        Amount: 1
+        Name: "&bDiamond Axe&8 ■ &7Tier &eI"
+        Lore: []
+        Enchants:
+        - DIG_SPEED=3
+        - UNBREAKING=1
+  AxeT2:
+    Price: 350.0
+    Icon:
+      Id: diamond_axe
+      Amount: 1
+      Name: "&b&nDiamond Axe"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Efficiency IV"
+      - "&e● Unbreaking II"
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Woodcutter-3
+    RequiredTotalLevels: 3
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Axe&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_axe
+        Amount: 1
+        Name: "&bDiamond Axe&8 ■ &7Tier &6II"
+        Lore: []
+        Enchants:
+        - DIG_SPEED=4
+        - UNBREAKING=2
+  AxeT3:
+    Price: 375.0
+    Icon:
+      Id: diamond_axe
+      Amount: 1
+      Name: "&b&nDiamond Axe"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Efficiency V"
+      - "&e● Unbreaking III"
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Woodcutter-4
+    RequiredTotalLevels: 4
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Axe&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_axe
+        Amount: 1
+        Name: "&bDiamond Axe&8 ■ &7Tier &cIII"
+        Lore: []
+        Enchants:
+        - DIG_SPEED=5
+        - UNBREAKING=3
+  AxeT4:
+    Price: 525.0
+    Icon:
+      Id: diamond_axe
+      Amount: 1
+      Name: "&b&nDiamond Axe"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Efficiency IV"
+      - "&e● Unbreaking III"
+      - "&e● Silk Touch I"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Woodcutter-4
+    RequiredTotalLevels: 4
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Axe&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_axe
+        Amount: 1
+        Name: "&bDiamond Axe&8 ■ &7Tier &4IV"
+        Lore: []
+        Enchants:
+        - DIG_SPEED=4
+        - UNBREAKING=3
+        - SILK_TOUCH=1
+  ShovelT1:
+    Price: 175.0
+    Icon:
+      Id: diamond_shovel
+      Amount: 1
+      Name: "&b&nDiamond Shovel"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Efficiency III"
+      - "&e● Unbreaking I"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Digger-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Shovel&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_shovel
+        Amount: 1
+        Name: "&bDiamond Shovel&8 ■ &7Tier &eI"
+        Lore: []
+        Enchants:
+        - DIG_SPEED=3
+        - UNBREAKING=1
+  ShovelT2:
+    Price: 225.0
+    Icon:
+      Id: diamond_shovel
+      Amount: 1
+      Name: "&b&nDiamond Shovel"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Efficiency IV"
+      - "&e● Unbreaking II"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Digger-3
+    RequiredTotalLevels: 3
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Shovel&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_shovel
+        Amount: 1
+        Name: "&bDiamond Shovel&8 ■ &7Tier &6II"
+        Lore: []
+        Enchants:
+        - DIG_SPEED=4
+        - UNBREAKING=2
+  ShovelT3:
+    Price: 350.0
+    Icon:
+      Id: diamond_shovel
+      Amount: 1
+      Name: "&b&nDiamond Shovel"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Efficiency V"
+      - "&e● Unbreaking III"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Digger-4
+    RequiredTotalLevels: 4
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Shovel&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_shovel
+        Amount: 1
+        Name: "&bDiamond Shovel&8 ■ &7Tier &cIII"
+        Lore: []
+        Enchants:
+        - DIG_SPEED=5
+        - UNBREAKING=3
+  ShovelT4:
+    Price: 400.0
+    Icon:
+      Id: diamond_shovel
+      Amount: 1
+      Name: "&b&nDiamond Shovel"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Efficiency IV"
+      - "&e● Unbreaking III"
+      - "&e● Silk Touch I"           
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Digger-4
+    RequiredTotalLevels: 4
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Shovel&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_shovel
+        Amount: 1
+        Name: "&bDiamond Shovel&8 ■ &7Tier &4IV"
+        Lore: []
+        Enchants:
+        - DIG_SPEED=4
+        - UNBREAKING=3
+        - SILK_TOUCH=1                                                                                              
+  SwordT1:
+    Price: 300.0
+    Icon:
+      Id: diamond_sword
+      Amount: 1
+      Name: "&b&nDiamond Sword"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Sharpness III"
+      - "&e● Unbreaking II"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Hunter-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Sword&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_sword
+        Amount: 1
+        Name: "&bDiamond Sword&8 ■ &7Tier &eI"
+        Lore: []
+        Enchants:
+        - SHARPNESS=3
+        - UNBREAKING=2
+  SwordT2:
+    Price: 350.0
+    Icon:
+      Id: diamond_sword
+      Amount: 1
+      Name: "&b&nDiamond Sword"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Sharpness IV"
+      - "&e● Unbreaking III"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Hunter-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Sword&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_sword
+        Amount: 1
+        Name: "&bDiamond Sword&8 ■ &7Tier &6II"
+        Lore: []
+        Enchants:
+        - SHARPNESS=4
+        - UNBREAKING=3
+  SwordT3:
+    Price: 400.0
+    Icon:
+      Id: diamond_sword
+      Amount: 1
+      Name: "&b&nDiamond Sword"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Sharpness V"
+      - "&e● Unbreaking III"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Hunter-3
+    RequiredTotalLevels: 3
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Sword&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_sword
+        Amount: 1
+        Name: "&bDiamond Sword&8 ■ &7Tier &6II+"
+        Lore: []
+        Enchants:
+        - SHARPNESS=5
+        - UNBREAKING=3
+  SwordT4:
+    Price: 620.0
+    Icon:
+      Id: diamond_sword
+      Amount: 1
+      Name: "&b&nDiamond Sword"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Sharpness III"
+      - "&e● Unbreaking II"
+      - "&e● Looting II"            
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Hunter-3
+    RequiredTotalLevels: 3
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Sword&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_sword
+        Amount: 1
+        Name: "&bDiamond Sword&8 ■ &7Tier &6II+"
+        Lore: []
+        Enchants:
+        - SHARPNESS=3
+        - UNBREAKING=2
+        - LOOTING=2
+  SwordT5:
+    Price: 720.0
+    Icon:
+      Id: diamond_sword
+      Amount: 1
+      Name: "&b&nDiamond Sword"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Sharpness IV"
+      - "&e● Unbreaking III"
+      - "&e● Looting III"            
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Hunter-4
+    RequiredTotalLevels: 4
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Sword&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_sword
+        Amount: 1
+        Name: "&bDiamond Sword&8 ■ &7Tier &cIII"
+        Lore: []
+        Enchants:
+        - SHARPNESS=4
+        - UNBREAKING=3
+        - LOOTING=3
+  SwordT6:
+    Price: 800.0
+    Icon:
+      Id: diamond_sword
+      Amount: 1
+      Name: "&b&nDiamond Sword"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Sharpness V"
+      - "&e● Unbreaking II"
+      - "&e● Looting III"            
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Hunter-4
+    RequiredTotalLevels: 4
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Sword&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_sword
+        Amount: 1
+        Name: "&bDiamond Sword&8 ■ &7Tier &cIII+"
+        Lore: []
+        Enchants:
+        - SHARPNESS=4
+        - UNBREAKING=2
+        - LOOTING=3
+  SwordT7:
+    Price: 950.0
+    Icon:
+      Id: diamond_sword
+      Amount: 1
+      Name: "&b&nDiamond Sword"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Sharpness V"
+      - "&e● Unbreaking III"
+      - "&e● Looting III"
+      - "&e● Fire Aspect II"
+      - "&e● Knockback II"                        
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Hunter-5
+    RequiredTotalLevels: 5
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Sword&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_sword
+        Amount: 1
+        Name: "&bDiamond Sword&8 ■ &7Tier &4IV"
+        Lore: []
+        Enchants:
+        - SHARPNESS=5
+        - UNBREAKING=3
+        - LOOTING=3
+        - FIRE_ASPECT=2
+        - KNOCKBACK=2
+  BowT1:
+    Price: 175.0
+    Icon:
+      Id: bow
+      Amount: 1
+      Name: "&b&nBow"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Power III"
+      - "&e● Unbreaking I"
+      - "&e● Punch I"             
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Hunter-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nBow&7."
+    GiveItems:
+      Pickaxe:
+        Id: bow
+        Amount: 1
+        Name: "&bBow&8 ■ &7Tier &eI"
+        Lore: []
+        Enchants:
+        - POWER=3
+        - UNBREAKING=1
+        - PUNCH=1
+  BowT2:
+    Price: 225.0
+    Icon:
+      Id: bow
+      Amount: 1
+      Name: "&b&nBow"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Power IV"
+      - "&e● Unbreaking II"
+      - "&e● Punch I"             
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Hunter-3
+    RequiredTotalLevels: 3
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nBow&7."
+    GiveItems:
+      Pickaxe:
+        Id: bow
+        Amount: 1
+        Name: "&bBow&8 ■ &7Tier &6II"
+        Lore: []
+        Enchants:
+        - POWER=4
+        - UNBREAKING=2
+        - PUNCH=1
+  BowT3:
+    Price: 275.0
+    Icon:
+      Id: bow
+      Amount: 1
+      Name: "&b&nBow"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Power V"
+      - "&e● Unbreaking III"
+      - "&e● Punch II"             
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Hunter-4
+    RequiredTotalLevels: 4
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nBow&7."
+    GiveItems:
+      Pickaxe:
+        Id: bow
+        Amount: 1
+        Name: "&bBow&8 ■ &7Tier &cIII"
+        Lore: []
+        Enchants:
+        - POWER=5
+        - UNBREAKING=3
+        - PUNCH=2
+  BowT4:
+    Price: 550.0
+    Icon:
+      Id: bow
+      Amount: 1
+      Name: "&b&nBow"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Power V"
+      - "&e● Unbreaking III"
+      - "&e● Punch II"
+      - "&e● Flame I"
+      - "&e● Infinity I"                        
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Hunter-5
+    RequiredTotalLevels: 5
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nBow&7."
+    GiveItems:
+      Bow:
+        Id: bow
+        Amount: 1
+        Name: "&bBow&8 ■ &7Tier &4IV"
+        Lore: []
+        Enchants:
+        - POWER=5
+        - UNBREAKING=3
+        - PUNCH=2
+        - FLAME=1
+        - INFINITY=1
+  DragonEgg:
+    Price: 250.0
+    Icon:
+      Id: DRAGON_EGG
+      Amount: 1
+      Name: "&aDragon Egg"
+      Lore:
+      - "&7"
+      - "&8▶ &7You will receive: &e1x Dragon Egg&7."                      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels: []
+    RequiredTotalLevels: 1
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &aDragon Egg&7."
+    GiveItems:
+      DragonEgg:
+        Id: DRAGON_EGG
+        Amount: 1
+        Name: []
+        Lore: []
+        Enchants: []
+  Beacon:
+    Price: 250.0
+    Icon:
+      Id: BEACON
+      Amount: 1
+      Name: "&aBeacon"
+      Lore:
+      - "&7"
+      - "&8▶ &7You will receive: &e1x Beacon&7."                      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels: []
+    RequiredTotalLevels: 1
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &aBeacon&7."
+    GiveItems:
+      Beacon:
+        Id: BEACON
+        Amount: 1
+        Name: []
+        Lore: []
+        Enchants: []
+  DiamondBlock:
+    Price: 150.0
+    Icon:
+      Id: DIAMOND_BLOCK
+      Amount: 1
+      Name: "&aDiamond Block"
+      Lore:
+      - "&7"
+      - "&8▶ &7You will receive: &e1x Diamond Block&7."                      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels: []
+    RequiredTotalLevels: 1
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &aDiamond Block&7."
+    GiveItems:
+      DiamondBlock:
+        Id: DIAMOND_BLOCK
+        Amount: 1
+        Name: []
+        Lore: []
+        Enchants: []
+  EmeraldBlock:
+    Price: 175.0
+    Icon:
+      Id: EMERALD_BLOCK
+      Amount: 1
+      Name: "&aEmerald Block"
+      Lore:
+      - "&7"
+      - "&8▶ &7You will receive: &e1x Emerald Block&7."                      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels: []
+    RequiredTotalLevels: 1
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &aEmerald Block&7."
+    GiveItems:
+      EmeraldBlock:
+        Id: EMERALD_BLOCK
+        Amount: 1
+        Name: []
+        Lore: []
+        Enchants: []
+  IronBlock:
+    Price: 120.0
+    Icon:
+      Id: IRON_BLOCK
+      Amount: 4
+      Name: "&aIron Block"
+      Lore:
+      - "&7"
+      - "&8▶ &7You will receive: &e4x Iron Block&7."                      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels: []
+    RequiredTotalLevels: 1
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &aIron Block&7."
+    GiveItems:
+      IronBlock:
+        Id: IRON_BLOCK
+        Amount: 4
+        Name: []
+        Lore: []
+        Enchants: []
+  GoldBlock:
+    Price: 140.0
+    Icon:
+      Id: GOLD_BLOCK
+      Amount: 4
+      Name: "&aGold Block"
+      Lore:
+      - "&7"
+      - "&8▶ &7You will receive: &e4x Gold Block&7."                      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels: []
+    RequiredTotalLevels: 1
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &aGold Block&7."
+    GiveItems:
+      GoldBlock:
+        Id: GOLD_BLOCK
+        Amount: 4
+        Name: []
+        Lore: []
+        Enchants: []
+  Elytra:
+    Price: 275.0
+    Icon:
+      Id: ELYTRA
+      Amount: 1
+      Name: "&aElytra"
+      Lore:
+      - "&7"
+      - "&8▶ &7You will receive: &e1x Elytra&7."                      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels: []
+    RequiredTotalLevels: 1
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &aElytra&7."
+    GiveItems:
+      Elytra:
+        Id: ELYTRA
+        Amount: 1
+        Name: []
+        Lore: []
+        Enchants: []
+  Trident:
+    Price: 250.0
+    Icon:
+      Id: TRIDENT
+      Amount: 1
+      Name: "&aTrident"
+      Lore:
+      - "&7"
+      - "&8▶ &7You will receive: &e1x Trident&7."                      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels: []
+    RequiredTotalLevels: 1
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &aTrident&7."
+    GiveItems:
+      Trident:
+        Id: TRIDENT
+        Amount: 1
+        Name: []
+        Lore: []
+        Enchants: []
+  XpBottle:
+    Price: 150.0
+    Icon:
+      Id: EXPERIENCE_BOTTLE
+      Amount: 128
+      Name: "&aExp Bottles"
+      Lore:
+      - "&7"
+      - "&8▶ &7You will receive: &e128x Experience Bottles&7."                      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels: []
+    RequiredTotalLevels: 1
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &aExp Bottles&7."
+    GiveItems:
+      ExpBottles:
+        Id: EXPERIENCE_BOTTLE
+        Amount: 128
+        Name: []
+        Lore: []
+        Enchants: []
+  HelmetT1:
+    Price: 300.0
+    Icon:
+      Id: diamond_helmet
+      Amount: 1
+      Name: "&b&nDiamond Helmet"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Protection III"
+      - "&e● Unbreaking II"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Weaponsmith-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Helmet&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_helmet
+        Amount: 1
+        Name: "&bDiamond Helmet&8 ■ &7Tier &eI"
+        Lore: []
+        Enchants:
+        - PROTECTION=3
+        - UNBREAKING=2
+  HelmetT2:
+    Price: 400.0
+    Icon:
+      Id: diamond_helmet
+      Amount: 1
+      Name: "&b&nDiamond Helmet"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Protection IV"
+      - "&e● Unbreaking III"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Weaponsmith-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Helmet&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_helmet
+        Amount: 1
+        Name: "&bDiamond Helmet&8 ■ &7Tier &6II"
+        Lore: []
+        Enchants:
+        - PROTECTION=4
+        - UNBREAKING=3
+  HelmetT3:
+    Price: 450.0
+    Icon:
+      Id: diamond_helmet
+      Amount: 1
+      Name: "&b&nDiamond Helmet"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Protection IV"
+      - "&e● Unbreaking III"
+      - "&e● Thorns III"           
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Weaponsmith-3
+    RequiredTotalLevels: 3
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Helmet&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_helmet
+        Amount: 1
+        Name: "&bDiamond Helmet&8 ■ &7Tier &cIII"
+        Lore: []
+        Enchants:
+        - PROTECTION=4
+        - UNBREAKING=3
+        - THORNS=3
+  HelmetT11:
+    Price: 125.0
+    Icon:
+      Id: diamond_helmet
+      Amount: 1
+      Name: "&b&nDiamond Helmet"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Respiration III"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels: []
+    RequiredTotalLevels: 1
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Helmet&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_helmet
+        Amount: 1
+        Name: "&bDiamond Helmet&8 ■ &7Tier &eI"
+        Lore: []
+        Enchants:
+        - RESPIRATION=3
+  ChestplateT1:
+    Price: 300.0
+    Icon:
+      Id: diamond_chestplate
+      Amount: 1
+      Name: "&b&nDiamond Chestplate"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Protection III"
+      - "&e● Unbreaking II"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Weaponsmith-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Chestplate&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_chestplate
+        Amount: 1
+        Name: "&bDiamond Chestplate&8 ■ &7Tier &eI"
+        Lore: []
+        Enchants:
+        - PROTECTION=3
+        - UNBREAKING=2
+  ChestplateT2:
+    Price: 400.0
+    Icon:
+      Id: diamond_chestplate
+      Amount: 1
+      Name: "&b&nDiamond Chestplate"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Protection IV"
+      - "&e● Unbreaking III"      
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Weaponsmith-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Chestplate&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_chestplate
+        Amount: 1
+        Name: "&bDiamond Chestplate&8 ■ &7Tier &6II"
+        Lore: []
+        Enchants:
+        - PROTECTION=4
+        - UNBREAKING=3
+  ChestplateT3:
+    Price: 450.0
+    Icon:
+      Id: diamond_chestplate
+      Amount: 1
+      Name: "&b&nDiamond Chestplate"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Protection IV"
+      - "&e● Unbreaking III"
+      - "&e● Thorns III"            
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Weaponsmith-3
+    RequiredTotalLevels: 3
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Chestplate&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_chestplate
+        Amount: 1
+        Name: "&bDiamond Chestplate&8 ■ &7Tier &cIII"
+        Lore: []
+        Enchants:
+        - PROTECTION=4
+        - UNBREAKING=3
+        - THORNS=3
+  LeggingsT1:
+    Price: 300.0
+    Icon:
+      Id: diamond_leggings
+      Amount: 1
+      Name: "&b&nDiamond Leggings"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Protection III"
+      - "&e● Unbreaking II"           
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Weaponsmith-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Leggings&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_leggings
+        Amount: 1
+        Name: "&bDiamond Leggings&8 ■ &7Tier &eI"
+        Lore: []
+        Enchants:
+        - PROTECTION=3
+        - UNBREAKING=2
+  LeggingsT2:
+    Price: 400.0
+    Icon:
+      Id: diamond_leggings
+      Amount: 1
+      Name: "&b&nDiamond Leggings"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Protection IV"
+      - "&e● Unbreaking III"           
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Weaponsmith-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Leggings&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_leggings
+        Amount: 1
+        Name: "&bDiamond Leggings&8 ■ &7Tier &6II"
+        Lore: []
+        Enchants:
+        - PROTECTION=4
+        - UNBREAKING=3
+  LeggingsT3:
+    Price: 450.0
+    Icon:
+      Id: diamond_leggings
+      Amount: 1
+      Name: "&b&nDiamond Leggings"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Protection IV"
+      - "&e● Unbreaking III"
+      - "&e● Thorns III"                 
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Weaponsmith-3
+    RequiredTotalLevels: 3
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Leggings&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_leggings
+        Amount: 1
+        Name: "&bDiamond Leggings&8 ■ &7Tier &cIII"
+        Lore: []
+        Enchants:
+        - PROTECTION=4
+        - UNBREAKING=3
+        - THORNS=3
+  BootsT1:
+    Price: 300.0
+    Icon:
+      Id: diamond_boots
+      Amount: 1
+      Name: "&b&nDiamond Boots"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Protection III"
+      - "&e● Unbreaking II"                 
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Weaponsmith-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Boots&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_boots
+        Amount: 1
+        Name: "&bDiamond Boots&8 ■ &7Tier &eI"
+        Lore: []
+        Enchants:
+        - PROTECTION=3
+        - UNBREAKING=2
+  BootsT2:
+    Price: 400.0
+    Icon:
+      Id: diamond_boots
+      Amount: 1
+      Name: "&b&nDiamond Boots"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Protection IV"
+      - "&e● Unbreaking III"                 
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Weaponsmith-2
+    RequiredTotalLevels: 2
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Boots&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_boots
+        Amount: 1
+        Name: "&bDiamond Boots&8 ■ &7Tier &6II"
+        Lore: []
+        Enchants:
+        - PROTECTION=4
+        - UNBREAKING=3
+  BootsT3:
+    Price: 450.0
+    Icon:
+      Id: diamond_boots
+      Amount: 1
+      Name: "&b&nDiamond Boots"
+      Lore:
+      - "&7"
+      - "&8▶ &7This item has the following enchants:"
+      - "&e● Protection IV"
+      - "&e● Unbreaking III"
+      - "&e● Thorns III"                       
+      - "&7"
+      HideWithoutPermission: false
+      HideIfThereIsNoEnoughPoints: false
+    RequiredPermission: []
+    RequiredJobLevels:
+    - Weaponsmith-3
+    RequiredTotalLevels: 3
+    PerformCommands:
+    - "msg &aJobs Shop&8 ➡ &7You purchased &b&nDiamond Boots&7."
+    GiveItems:
+      Pickaxe:
+        Id: diamond_boots
+        Amount: 1
+        Name: "&bDiamond Boots&8 ■ &7Tier &cIII"
+        Lore: []
+        Enchants:
+        - PROTECTION=4
+        - UNBREAKING=3
+        - THORNS=3                                                                                                                                                                                                                                                                                                                                                           

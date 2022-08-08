@@ -1,0 +1,1295 @@
+Builder:
+  fullname: Builder
+  shortname: B
+  description: '&2Earns money for building structures.'
+  ChatColour: DARK_GREEN
+  chat-display: shortjob
+  max-level: 200
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*5)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Builder - Easy
+      Objectives:
+      - Place;stripped_oak_wood;64
+      - Place;stripped_spruce_wood;64
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a100'
+    '2':
+      Name: Builder - Easy
+      Objectives:
+      - Place;stripped_birch_wood;64
+      - Place;stripped_jungle_wood;64
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a100'
+    '3':
+      Name: Builder - Easy
+      Objectives:
+      - Place;stripped_acacia_wood;64
+      - Place;stripped_dark_oak_wood;64
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a100'
+    '4':
+      Name: Builder - Easy
+      Objectives:
+      - Place;cobblestone;64
+      - Place;andesite;32
+      - Place;granite;32
+      - Place;diorite;32
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a150'
+    '5':
+      Name: Builder - Easy
+      Objectives:
+      - Place;oak_planks;64
+      - Place;spruce_planks;64
+      - Place;birch_planks;64
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a175'
+    '6':
+      Name: Builder - Easy
+      Objectives:
+      - Place;jungle_planks;64
+      - Place;acacia_planks;64
+      - Place;dark_oak_planks;64
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a175'
+    '7':
+      Name: Builder - Medium
+      Objectives:
+      - Place;bricks;192
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a200'
+    '8':
+      Name: Builder - Medium
+      Objectives:
+      - Place;obsidian;32
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a250'
+    '9':
+      Name: Builder - Easy
+      Objectives:
+      - Place;furnace;16
+      - Place;chest;32
+      - Place;crafting_table;4
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a100'
+    '10':
+      Name: Builder - Easy
+      Objectives:
+      - Place;oak_stairs;48
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a125'
+    '11':
+      Name: Builder - Easy
+      Objectives:
+      - Place;cobblestone_stairs;48
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a125'
+    '12':
+      Name: Builder - Easy
+      Objectives:
+      - Place;spruce_stairs;48
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a125'
+    '13':
+      Name: Builder - Easy
+      Objectives:
+      - Place;birch_stairs;48
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a125'
+    '14':
+      Name: Builder - Easy
+      Objectives:
+      - Place;quartz_stairs;32
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a150'
+    '15':
+      Name: Builder - Medium
+      Objectives:
+      - Place;quartz_block;128
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a250'
+    '16':
+      Name: Builder - Easy
+      Objectives:
+      - Place;oak_fence;32
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a150'
+    '17':
+      Name: Builder - Easy
+      Objectives:
+      - Place;glowstone;16
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a150'
+    '18':
+      Name: Builder - Medium
+      Objectives:
+      - Place;glass;128
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a200'
+    '19':
+      Name: Builder - Medium
+      Objectives:
+      - Place;nether_bricks;192
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a250'
+    '20':
+      Name: Builder - Hard
+      Objectives:
+      - Place;stone_bricks;256
+      RewardCommands:
+      - eco give [playerName] 300
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&2&l* &7Complete the following quest'
+      - '&2&l* &7and you will get rewarded.'
+      - ''
+      - '&2Options:'
+      - '&2&l* &7Reward: &a&l$&a300'
+  Gui:
+    Item: quartz_block
+  Place:
+    stripped_oak_wood:
+      income: 0.2
+      points: 0.1
+      experience: 0.15
+    stripped_spruce_wood:
+      income: 0.2
+      points: 0.1
+      experience: 0.15
+    stripped_birch_wood:
+      income: 0.2
+      points: 0.1
+      experience: 0.15
+    stripped_jungle_wood:
+      income: 0.2
+      points: 0.1
+      experience: 0.15
+    stripped_acacia_wood:
+      income: 0.2
+      points: 0.1
+      experience: 0.15
+    stripped_dark_oak_wood:
+      income: 0.2
+      points: 0.1
+      experience: 0.15
+    dead_tube_coral_block:
+      income: 0.2
+      points: 0.1
+      experience: 0.1
+    dead_brain_coral_block:
+      income: 0.2
+      points: 0.1
+      experience: 0.1
+    dead_bubble_coral_block:
+      income: 0.2
+      points: 0.1
+      experience: 0.1
+    dead_fire_coral_block:
+      income: 0.2
+      points: 0.1
+      experience: 0.1
+    dead_horn_coral_block:
+      income: 0.2
+      points: 0.1
+      experience: 0.1
+    dried_kelp_block:
+      income: 0.3
+      points: 0.15
+      experience: 0.3
+    stone:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    andesite:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+    granite:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+    diorite:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+    cobblestone:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    oak_planks:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+    spruce_planks:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+    birch_planks:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+    jungle_planks:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+    acacia_planks:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+    dark_oak_planks:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+    wool:
+      income: 0.15
+      points: 0.1
+      experience: 0.15
+    gold_block:
+      income: 0.8
+      points: 0.3
+      experience: 0.8
+    iron_block:
+      income: 0.5
+      points: 0.2
+      experience: 0.5
+    oak_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    spruce_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    birch_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    jungle_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    acacia_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    dark_oak_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    stone_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    sandstone_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    petrified_oak_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    cobblestone_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    brick_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    stone_brick_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    nether_brick_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    quartz_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    red_sandstone_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    purpur_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    bricks:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    bookshelf:
+      income: 0.3
+      points: 0.2
+      experience: 0.4
+    mossy_cobblestone:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    obsidian:
+      income: 0.8
+      points: 0.5
+      experience: 1.5
+    cobblestone_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    acacia_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    birch_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    brick_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    dark_oak_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    dark_prismarine_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    jungle_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    oak_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    prismarine_brick_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    prismarine_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    purpur_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    quartz_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    red_sandstone_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    sandstone_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    spruce_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    stone_brick_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    chest:
+      income: 0.15
+      points: 0.05
+      experience: 0.2
+    diamond_block:
+      income: 1.0
+      points: 0.8
+      experience: 1.5
+    crafting_table:
+      income: 0.15
+      points: 0.05
+      experience: 0.2
+    furnace:
+      income: 0.15
+      points: 0.05
+      experience: 0.2
+    ladder:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    ice:
+      income: 0.2
+      points: 0.1
+      experience: 0.1
+    snow_block:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    jukebox:
+      income: 0.5
+      points: 0.5
+      experience: 1
+    oak_fence:
+      income: 0.05
+      points: 0.03
+      experience: 0.05
+    spruce_fence:
+      income: 0.05
+      points: 0.03
+      experience: 0.05
+    birch_fence:
+      income: 0.05
+      points: 0.03
+      experience: 0.05
+    jungle_fence:
+      income: 0.05
+      points: 0.03
+      experience: 0.05
+    acacia_fence:
+      income: 0.05
+      points: 0.03
+      experience: 0.05
+    dark_oak_fence:
+      income: 0.05
+      points: 0.03
+      experience: 0.05
+    oak_fence_gate:
+      income: 0.05
+      points: 0.03
+      experience: 0.05
+    spruce_fence_gate:
+      income: 0.05
+      points: 0.03
+      experience: 0.05
+    birch_fence_gate:
+      income: 0.05
+      points: 0.03
+      experience: 0.05
+    jungle_fence_gate:
+      income: 0.05
+      points: 0.03
+      experience: 0.05
+    acacia_fence_gate:
+      income: 0.05
+      points: 0.03
+      experience: 0.05
+    dark_oak_fence_gate:
+      income: 0.05
+      points: 0.03
+      experience: 0.05
+    glowstone:
+      income: 0.5
+      points: 0.08
+      experience: 0.5
+    glass:
+      income: 0.35
+      points: 0.04
+      experience: 0.35
+    white_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    orange_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    magenta_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    light_blue_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    yellow_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    lime_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    pink_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    gray_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    light_gray_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    cyan_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    purple_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    blue_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    brown_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    green_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    red_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    black_stained_glass:
+      income: 0.4
+      points: 0.045
+      experience: 0.4
+    iron_trapdoor:
+      income: 0.08
+      points: 0.05
+      experience: 0.08
+    oak_trapdoor:
+      income: 0.08
+      points: 0.05
+      experience: 0.08
+    spruce_trapdoor:
+      income: 0.08
+      points: 0.05
+      experience: 0.08
+    birch_trapdoor:
+      income: 0.08
+      points: 0.05
+      experience: 0.08
+    jungle_trapdoor:
+      income: 0.08
+      points: 0.05
+      experience: 0.08
+    acacia_trapdoor:
+      income: 0.08
+      points: 0.05
+      experience: 0.08
+    dark_oak_trapdoor:
+      income: 0.08
+      points: 0.05
+      experience: 0.08
+    stone_bricks:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    mossy_stone_bricks:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    cracked_stone_bricks:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    chiseled_stone_bricks:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    iron_bars:
+      income: 0.03
+      points: 0.02
+      experience: 0.03
+    glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    white_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    orange_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    magenta_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    light_blue_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    yellow_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    lime_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    pink_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    gray_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    light_gray_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    cyan_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    purple_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    blue_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    brown_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    green_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    red_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    black_stained_glass_pane:
+      income: 0.2
+      points: 0.02
+      experience: 0.2
+    nether_bricks:
+      income: 0.15
+      points: 0.08
+      experience: 0.15
+    nether_brick_fence:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    nether_brick_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    enchanting_table:
+      income: 1.5
+      points: 1.0
+      experience: 2
+    redstone_lamp:
+      income: 0.8
+      points: 0.15
+      experience: 1.2      
+    ender_chest:
+      income: 1.5
+      points: 1.0
+      experience: 2
+    emerald_block:
+      income: 1.5
+      points: 1.0
+      experience: 2
+    cobblestone_wall:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    mossy_cobblestone_wall:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    trapped_chest:
+      income: 0.15
+      points: 0.05
+      experience: 0.2
+    redstone_block:
+      income: 1.0
+      points: 0.35
+      experience: 1
+    hopper:
+      income: 0.65
+      points: 0.25
+      experience: 0.8
+    quartz_block:
+      income: 0.5
+      points: 0.2
+      experience: 0.5
+    smooth_quartz:
+      income: 0.5
+      points: 0.25
+      experience: 0.5
+    quartz_pillar:
+      income: 0.5
+      points: 0.25
+      experience: 0.5
+    chiseled_quartz_block:
+      income: 1.0
+      points: 0.3
+      experience: 1.0
+    terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    white_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    orange_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    magenta_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    light_blue_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    yellow_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    lime_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    pink_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    gray_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    light_gray_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    cyan_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    purple_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    blue_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    brown_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    green_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    red_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    black_terracotta:
+      income: 0.2
+      points: 0.04
+      experience: 0.3
+    oak_leaves:
+      income: 0.08
+      points: 0.04
+      experience: 0.07
+    spruce_leaves:
+      income: 0.08
+      points: 0.04
+      experience: 0.07
+    birch_leaves:
+      income: 0.08
+      points: 0.04
+      experience: 0.07
+    jungle_leaves:
+      income: 0.08
+      points: 0.04
+      experience: 0.07
+    acacia_leaves:
+      income: 0.08
+      points: 0.04
+      experience: 0.07
+    dark_oak_leaves:
+      income: 0.08
+      points: 0.04
+      experience: 0.07
+    prismarine:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    prismarine_bricks:
+      income: 0.2
+      points: 0.1
+      experience: 0.2
+    dark_prismarine:
+      income: 0.3
+      points: 0.2
+      experience: 0.3
+    sea_lantern:
+      income: 0.5
+      points: 0.3
+      experience: 0.5
+    hay_block:
+      income: 0.6
+      points: 0.2
+      experience: 0.5
+    coal_block:
+      income: 0.6
+      points: 0.15
+      experience: 0.8      
+    packed_ice:
+      income: 0.25
+      points: 0.08
+      experience: 0.5
+    red_sandstone:
+      income: 0.4
+      points: 0.2
+      experience: 0.3
+    chiseled_red_sandstone:
+      income: 0.4
+      points: 0.2
+      experience: 0.3
+    cut_red_sandstone:
+      income: 0.4
+      points: 0.2
+      experience: 0.3
+    END_STONE_BRICKS:
+      income: 0.2
+      points: 0.1
+      experience: 0.1
+    CRIMSON_PLANKS:
+      income: 0.08
+      points: 0.02
+      experience: 0.08
+    WARPED_PLANKS:
+      income: 0.08
+      points: 0.02
+      experience: 0.08
+    CRIMSON_HYPHAE:
+      income: 0.5
+      points: 0.2
+      experience: 0.4
+    WARPED_HYPHAE:
+      income: 0.5
+      points: 0.2
+      experience: 0.4
+    POLISHED_BLACKSTONE:
+      income: 0.1
+      points: 0.07
+      experience: 0.15
+    CHISELED_POLISHED_BLACKSTONE:
+      income: 0.15
+      points: 0.08
+      experience: 0.2
+    POLISHED_BLACKSTONE_BRICKS:
+      income: 0.1
+      points: 0.07
+      experience: 0.15
+    CRACKED_POLISHED_BLACKSTONE_BRICKS:
+      income: 0.2
+      points: 0.15
+      experience: 0.2
+    POLISHED_BLACKSTONE_SLAB:
+      income: 0.06
+      points: 0.01
+      experience: 0.04
+    POLISHED_BLACKSTONE_STAIRS:
+      income: 0.08
+      points: 0.01
+      experience: 0.04
+    POLISHED_BLACKSTONE_BRICK_SLAB:
+      income: 0.06
+      points: 0.01
+      experience: 0.04
+    POLISHED_BLACKSTONE_BRICK_STAIRS:
+      income: 0.08
+      points: 0.01
+      experience: 0.04
+    black_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.15
+    blue_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    brown_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    cyan_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    gray_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    green_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    light_blue_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    light_gray_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    lime_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    magenta_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    orange_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    pink_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    purple_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    red_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    white_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    yellow_concrete:
+      income: 0.25
+      points: 0.1
+      experience: 0.1
+    amethyst_block:
+      income: 0.5
+      points: 0.2
+      experience: 0.5
+    copper_block:
+      income: 0.6
+      points: 0.15
+      experience: 0.8
+    cut_copper:
+      income: 0.6
+      points: 0.15
+      experience: 0.8                                                                                                                 
+    cut_copper_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    cut_copper_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    cobbled_deepslate:
+      income: 0.02
+      points: 0.02
+      experience: 0.02
+    cobbled_deepslate_stairs:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    cobbled_deepslate_slab:
+      income: 0.02
+      points: 0.01
+      experience: 0.02      
+    cobbled_deepslate_wall:
+      income: 0.02
+      points: 0.01
+      experience: 0.02            
+    CHISELED_DEEPSLATE:
+      income: 0.15
+      points: 0.08
+      experience: 0.2
+    POLISHED_DEEPSLATE:
+      income: 0.1
+      points: 0.07
+      experience: 0.15      
+    POLISHED_DEEPSLATE_SLAB:
+      income: 0.06
+      points: 0.01
+      experience: 0.04
+    POLISHED_DEEPSLATE_STAIRS:
+      income: 0.08
+      points: 0.01
+      experience: 0.04
+    POLISHED_DEEPSLATE_WALL:
+      income: 0.08
+      points: 0.01
+      experience: 0.04
+    DEEPSLATE_BRICKS:
+      income: 0.1
+      points: 0.07
+      experience: 0.15
+    CRACKED_DEEPSLATE_BRICKS:
+      income: 0.2
+      points: 0.09
+      experience: 0.2         
+    DEEPSLATE_BRICK_SLAB:
+      income: 0.06
+      points: 0.01
+      experience: 0.04
+    DEEPSLATE_BRICK_STAIRS:
+      income: 0.08
+      points: 0.01
+      experience: 0.04
+    DEEPSLATE_BRICK_WALL:
+      income: 0.08
+      points: 0.01
+      experience: 0.04
+    DEEPSLATE_TILES:
+      income: 0.1
+      points: 0.07
+      experience: 0.15
+    CRACKED_DEEPSLATE_TILES:
+      income: 0.2
+      points: 0.09
+      experience: 0.2         
+    DEEPSLATE_TILE_SLAB:
+      income: 0.06
+      points: 0.01
+      experience: 0.04
+    DEEPSLATE_TILE_STAIRS:
+      income: 0.08
+      points: 0.01
+      experience: 0.04
+    DEEPSLATE_TILE_WALL:
+      income: 0.08
+      points: 0.01
+      experience: 0.04
+    tinted_glass:
+      income: 0.5
+      points: 0.055
+      experience: 0.5
+    pointed_dripstone:
+      income: 0.07
+      points: 0.02
+      experience: 0.08
+    lightning_rod:
+      income: 0.25
+      points: 0.05
+      experience: 0.4
+    candle:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    white_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    orange_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    magenta_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    light_blue_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    yellow_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    lime_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    pink_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    gray_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    light_gray_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    cyan_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    purple_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    blue_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    brown_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    green_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    red_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02
+    black_candle:
+      income: 0.025
+      points: 0.01
+      experience: 0.02                 

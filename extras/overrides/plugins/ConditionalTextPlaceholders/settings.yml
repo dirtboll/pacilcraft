@@ -1,0 +1,9 @@
+# Settings configuration for ConditionalTextPlaceholders
+#
+# Version: 1.5.0
+
+jobs-chat:
+  placeholder: '%jobsr_user_joinedjobcount%'
+  rules:
+    - ">0;&7【&r%nested_jobsr_user_title_{jobsr_user_id}%&7 | &r%nested_jobsr_chatcolor_{jobsr_user_job_{jobsr_user_id}}%%nested_jobsr_user_job_{jobsr_user_id}%&7】&r "
+    - "&7【&fNitwit&7】&r "

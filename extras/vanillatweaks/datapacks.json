@@ -1,0 +1,18 @@
+{
+    "type": "datapacks",
+    "version": "1.18",
+    "packs": {
+        "survival": [
+            "unlock all recipes"
+        ],
+        "items": [
+            "armored elytra",
+            "player head drops"
+        ],
+        "mobs": [
+            "double shulker shells",
+            "larger phantoms",
+            "more mob heads"
+        ]
+    }
+}

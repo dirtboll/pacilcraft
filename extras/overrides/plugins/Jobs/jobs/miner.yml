@@ -1,0 +1,660 @@
+Miner:
+  fullname: Miner
+  shortname: M
+  description: '&bEarns money mining minerals and ores.'
+  ChatColour: AQUA
+  chat-display: shortjob
+  max-level: 200
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*5)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Miner - Easy
+      Objectives:
+      - Break;stone;200
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a100'
+    '2':
+      Name: Miner - Easy
+      Objectives:
+      - Break;stone;50
+      - Break;andesite;50
+      - Break;granite;50
+      - Break;diorite;50
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a150'
+    '3':
+      Name: Miner - Easy
+      Objectives:
+      - Break;andesite;150
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a150'
+    '4':
+      Name: Miner - Easy
+      Objectives:
+      - Break;granite;150
+      - Break;diorite;50
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a175'
+    '5':
+      Name: Miner - Medium
+      Objectives:
+      - Break;stone;256
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a200'
+    '6':
+      Name: Miner - Medium
+      Objectives:
+      - Break;andesite;192
+      - Break;granite;128
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a250'
+    '7':
+      Name: Miner - Medium
+      Objectives:
+      - Break;granite;192
+      - Break;diorite;128
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a250'
+    '8':
+      Name: Miner - Medium
+      Objectives:
+      - Break;diorite;192
+      - Break;sandstone;64
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a250'
+    '9':
+      Name: Miner - Medium
+      Objectives:
+      - Break;stone;384
+      - Break;sandstone;128
+      RewardCommands:
+      - eco give [playerName] 300
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a300'
+    '10':
+      Name: Miner - Hard
+      Objectives:
+      - Break;stone;512
+      RewardCommands:
+      - eco give [playerName] 400
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a400'
+    '11':
+      Name: Miner - Hard
+      Objectives:
+      - Break;andesite;192
+      - Break;diorite;192
+      - Break;granite;192
+      RewardCommands:
+      - eco give [playerName] 500
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a500'
+    '12':
+      Name: Miner - Hard
+      Objectives:
+      - Break;sandstone;428
+      RewardCommands:
+      - eco give [playerName] 500
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a500'
+    '13':
+      Name: Miner - Easy
+      Objectives:
+      - Break;coal_ore;64
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a150'
+    '14':
+      Name: Miner - Easy
+      Objectives:
+      - Break;iron_ore;64
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a175'
+    '15':
+      Name: Miner - Medium
+      Objectives:
+      - Break;redstone_ore;128
+      RewardCommands:
+      - eco give [playerName] 225
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a225'
+    '16':
+      Name: Miner - Medium
+      Objectives:
+      - Break;gold_ore;96
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a250'
+    '17':
+      Name: Miner - Medium
+      Objectives:
+      - Break;lapis_ore;64
+      RewardCommands:
+      - eco give [playerName] 300
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a300'
+    '18':
+      Name: Miner - Hard
+      Objectives:
+      - Break;diamond_ore;48
+      RewardCommands:
+      - eco give [playerName] 400
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a400'
+    '19':
+      Name: Miner - Hard
+      Objectives:
+      - Break;emerald_ore;32
+      RewardCommands:
+      - eco give [playerName] 400
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a400'
+    '20':
+      Name: Miner - Hard
+      Objectives:
+      - Break;nether_quartz_ore;192
+      RewardCommands:
+      - eco give [playerName] 450
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a450'
+    '21':
+      Name: Miner - Impossible
+      Objectives:
+      - Break;coal_ore;192
+      - Break;iron_ore;128
+      - Break;gold_ore;96
+      - Break;diamond_ore;64
+      - Break;emerald_ore;32
+      RewardCommands:
+      - eco give [playerName] 1000
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&b&l* &7Complete the following quest'
+      - '&b&l* &7and you will get rewarded.'
+      - ''
+      - '&bOptions:'
+      - '&b&l* &7Reward: &a&l$&a1000'
+  Gui:
+    Item: GOLDEN_PICKAXE
+  TNTBreak:
+    stone:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    granite:
+      income: 0.02
+      points: 0.02
+      experience: 0.02
+    diorite:
+      income: 0.02
+      points: 0.02
+      experience: 0.02
+    andesite:
+      income: 0.02
+      points: 0.02
+      experience: 0.02
+  Break:
+    tube_coral_block:
+      income: 0.5
+      points: 0.2
+      experience: 0.4
+    brain_coral_block:
+      income: 0.5
+      points: 0.2
+      experience: 0.4
+    bubble_coral_block:
+      income: 0.5
+      points: 0.2
+      experience: 0.4
+    fire_coral_block:
+      income: 0.5
+      points: 0.2
+      experience: 0.4
+    horn_coral_block:
+      income: 0.5
+      points: 0.2
+      experience: 0.4
+    andesite:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    stone:
+      income: 0.01
+      points: 0.01
+      experience: 0.015
+    granite:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    diorite:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    sandstone:
+      income: 0.15
+      points: 0.1
+      experience: 0.2
+    chiseled_sandstone:
+      income: 0.15
+      points: 0.1
+      experience: 0.2
+    cut_sandstone:
+      income: 0.15
+      points: 0.1
+      experience: 0.2
+    coal_ore:
+      income: 0.2
+      points: 0.15
+      experience: 0.2
+    redstone_ore:
+      income: 0.35
+      points: 0.25
+      experience: 0.35
+    iron_ore:
+      income: 0.3
+      points: 0.2
+      experience: 0.35
+    gold_ore:
+      income: 0.4
+      points: 0.3
+      experience: 0.4
+    lapis_ore:
+      income: 0.4
+      points: 0.3
+      experience: 0.4
+    diamond_ore:
+      income: 1
+      points: 0.8
+      experience: 1.5
+    emerald_ore:
+      income: 10
+      points: 5
+      experience: 15
+    nether_quartz_ore:
+      income: 0.25
+      points: 0.2
+      experience: 0.25
+    obsidian:
+      income: 1.5
+      points: 1
+      experience: 3
+    cobblestone_wall:
+      income: 0.05
+      points: 0.01
+      experience: 0.05
+    mossy_cobblestone_wall:
+      income: 0.05
+      points: 0.01
+      experience: 0.05
+    nether_bricks:
+      income: 0.08
+      points: 0.04
+      experience: 0.08
+    nether_brick_stairs:
+      income: 0.06
+      points: 0.02
+      experience: 0.06
+    nether_brick_fence:
+      income: 0.06
+      points: 0.02
+      experience: 0.06
+    netherrack:
+      income: 0.02
+      points: 0.02
+      experience: 0.03
+    prismarine:
+      income: 0.1
+      points: 0.09
+      experience: 0.1
+    prismarine_bricks:
+      income: 0.1
+      points: 0.09
+      experience: 0.1
+    dark_prismarine:
+      income: 0.1
+      points: 0.09
+      experience: 0.1
+    ancient_debris:
+      income: 5
+      points: 2.5
+      experience: 7.5
+    END_STONE:
+      income: 0.05
+      points: 0.04
+      experience: 0.05
+    PURPUR_BLOCK:
+      income: 0.15
+      points: 0.1
+      experience: 0.2
+    MAGMA_BLOCK:
+      income: 0.05
+      points: 0.04
+      experience: 0.05
+    BASALT:
+      income: 0.02
+      points: 0.02
+      experience: 0.03
+    BLACKSTONE:
+      income: 0.03
+      points: 0.03
+      experience: 0.04
+    GILDED_BLACKSTONE:
+      income: 0.15
+      points: 0.1
+      experience: 0.2
+    NETHER_GOLD_ORE:
+      income: 0.3
+      points: 0.2
+      experience: 0.4
+    RED_SANDSTONE:
+      income: 0.15
+      points: 0.1
+      experience: 0.2
+    CHISELED_RED_SANDSTONE:
+      income: 0.15
+      points: 0.1
+      experience: 0.2
+    CUT_RED_SANDSTONE:
+      income: 0.15
+      points: 0.1
+      experience: 0.2
+    PURPUR_PILLAR:
+      income: 0.25
+      points: 0.1
+      experience: 0.3
+    END_STONE_BRICKS:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+    POLISHED_BASALT:
+      income: 0.06
+      points: 0.04
+      experience: 0.07
+    MOSSY_COBBLESTONE:
+      income: 0.02
+      points: 0.01
+      experience: 0.03
+    terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    white_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    orange_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    magenta_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    light_blue_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    yellow_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    lime_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    pink_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    gray_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    light_gray_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    cyan_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    purple_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    blue_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    brown_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    green_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    red_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    black_terracotta:
+      income: 0.1
+      points: 0.02
+      experience: 0.175
+    packed_ice:
+      income: 0.25
+      points: 0.08
+      experience: 0.5
+    amethyst_cluster:
+      income: 0.75
+      points: 0.4
+      experience: 0.9      
+    deepslate_coal_ore:
+      income: 0.22
+      points: 0.18
+      experience: 0.22
+    deepslate_redstone_ore:
+      income: 0.42
+      points: 0.31
+      experience: 0.35
+    deepslate_iron_ore:
+      income: 0.3
+      points: 0.2
+      experience: 0.42
+    deepslate_gold_ore:
+      income: 0.5
+      points: 0.375
+      experience: 0.5
+    deepslate_lapis_ore:
+      income: 0.5
+      points: 0.375
+      experience: 0.5
+    deepslate_diamond_ore:
+      income: 1.25
+      points: 1.0
+      experience: 1.8
+    deepslate_emerald_ore:
+      income: 12.5
+      points: 6.25
+      experience: 18.75
+    copper_ore:
+      income: 0.3
+      points: 0.2
+      experience: 0.35
+    deepslate_copper_ore:
+      income: 0.3
+      points: 0.2
+      experience: 0.42
+    calcite:
+      income: 0.15
+      points: 0.075
+      experience: 0.2
+    tuff:
+      income: 0.15
+      points: 0.075
+      experience: 0.2
+    deepslate:
+      income: 0.02
+      points: 0.02
+      experience: 0.025
+    pointed_dripstone:
+      income: 0.25
+      points: 0.1
+      experience: 0.3
+    smooth_basalt:
+      income: 0.06
+      points: 0.04
+      experience: 0.07                                                                            
+  Place:
+    rail:
+      income: 0.06
+      points: 0.02
+      experience: 0.08
+    iron_ore:
+      income: -1.5
+      points: -1
+      experience: -1
+    gold_ore:
+      income: -2.0
+      points: -1
+      experience: -1
+    diamond_ore:
+      income: -2.5
+      points: -1
+      experience: -2
+    emerald_ore:
+      income: -5
+      points: -2.5
+      experience: -7.5
+    stonecutter:
+      income: 1.0
+      points: 0.2
+      experience: 1.75      

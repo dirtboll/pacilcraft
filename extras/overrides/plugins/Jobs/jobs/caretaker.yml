@@ -1,0 +1,736 @@
+Caretaker:
+  fullname: Caretaker
+  shortname: Ca
+  description: '&9Earns money by taking care of animals.'
+  ChatColour: BLUE
+  chat-display: shortjob
+  max-level: 200
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*5)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Caretaker - Easy
+      Objectives:
+      - Tame;wolf;4
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a150'
+    '2':
+      Name: Caretaker - Easy
+      Objectives:
+      - Tame;horse;2
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '3':
+      Name: Caretaker - Easy
+      Objectives:
+      - Tame;donkey;2
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a150'
+    '4':
+      Name: Caretaker - Easy
+      Objectives:
+      - Tame;mule;2
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a150'
+    '5':
+      Name: Caretaker - Easy
+      Objectives:
+      - Tame;cat;2
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a175'
+    '6':
+      Name: Caretaker - Easy
+      Objectives:
+      - Tame;parrot;1
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a100'
+    '7':
+      Name: Caretaker - Easy
+      Objectives:
+      - Tame;llama;1
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '8':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;horse;2
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '9':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;sheep;5
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a100'
+    '10':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;pig;5
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a100'
+    '11':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;cow;5
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a100'
+    '12':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;rabbit;5
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '13':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;chicken;5
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a100'
+    '14':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;goat;3
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a150'
+    '15':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;turtle;2
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a150'
+    '16':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;donkey;2
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '17':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;llama;2
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a175'
+    '18':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;wolf;2
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '19':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;ocelot;2
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '20':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;cat;2
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '21':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;panda;2
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a175'
+    '22':
+      Name: Caretaker - Easy
+      Objectives:
+      - Breed;fox;2
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a175'
+    '23':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;White;32
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a100'
+    '24':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Red;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '25':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Orange;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '26':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Yellow;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '27':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Green;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '28':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Blue;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '29':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Light_blue;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '30':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Magenta;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '31':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Pink;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '32':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Light_gray;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '33':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Black;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '34':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Brown;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '35':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Purple;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '36':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Cyan;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '37':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Gray;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '38':
+      Name: Caretaker - Easy
+      Objectives:
+      - Shear;Lime;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a125'
+    '39':
+      Name: Caretaker - Easy
+      Objectives:
+      - Milk;Cow;8
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a100'
+    '40':
+      Name: Caretaker - Easy
+      Objectives:
+      - Milk;Cow;16
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a150'
+    '41':
+      Name: Caretaker - Easy
+      Objectives:
+      - Milk;Cow;24
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a175'
+    '42':
+      Name: Caretaker - Medium
+      Objectives:
+      - Milk;Cow;32
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&d&l* &7Complete the following quest'
+      - '&d&l* &7and you will get rewarded.'
+      - ''
+      - '&dOptions:'
+      - '&d&l* &7Reward: &a&l$&a200'                                                                                                                             
+  Gui:
+    Item: Saddle
+  Tame:
+    Wolf:
+      income: 3.5
+      points: 0.8
+      experience: 4.0
+    Horse:
+      income: 3.5
+      points: 0.8
+      experience: 4.0
+    Donkey:
+      income: 3.5
+      points: 0.8
+      experience: 4.0
+    Mule:
+      income: 3.5
+      points: 0.8
+      experience: 4.0            
+    Cat:
+      income: 3.0
+      points: 0.5
+      experience: 3.5      
+    Parrot:
+      income: 3.0
+      points: 0.5
+      experience: 3.5
+    Ocelot:
+      income: 3.0
+      points: 0.5
+      experience: 3.5
+    Llama:
+      income: 3.5
+      points: 0.8
+      experience: 4.0
+  Breed:
+    Horse:
+      income: 1.5
+      points: 0.3
+      experience: 2.0
+    Sheep:
+      income: 0.8
+      points: 0.15
+      experience: 1.5
+    Cow:
+      income: 0.8
+      points: 0.15
+      experience: 1.5
+    mushroom_cow:
+      income: 2.75
+      points: 0.4
+      experience: 3.0
+    Pig:
+      income: 0.8
+      points: 0.15
+      experience: 1.5
+    Chicken:
+      income: 0.8
+      points: 0.15
+      experience: 1.5
+    Wolf:
+      income: 1.5
+      points: 0.3
+      experience: 2.0
+    Ocelot:
+      income: 1.5
+      points: 0.3
+      experience: 2.0
+    Rabbit:
+      income: 0.8
+      points: 0.15
+      experience: 1.5
+    Llama:
+      income: 1.5
+      points: 0.3
+      experience: 2.0
+    Turtle:
+      income: 1.75
+      points: 0.35
+      experience: 2.25
+    Goat:
+      income: 0.8
+      points: 0.15
+      experience: 1.5
+    Cat:
+      income: 1.5
+      points: 0.3
+      experience: 2.0
+    Donkey:
+      income: 1.5
+      points: 0.3
+      experience: 2.0
+    Panda:
+      income: 2.0
+      points: 0.35
+      experience: 2.50
+    Fox:
+      income: 2.0
+      points: 0.35
+      experience: 2.75
+    Bee:
+      income: 1.50
+      points: 0.25
+      experience: 2.0                                    
+  Shear:
+    Red:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Orange:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Yellow:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Green:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Blue:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Light_Blue:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Magenta:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Pink:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    White:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Light_Gray:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Black:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Brown:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Purple:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Cyan:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Gray:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    Lime:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+  Milk:
+    Cow:
+      income: 0.15
+      points: 0.05
+      experience: 0.3

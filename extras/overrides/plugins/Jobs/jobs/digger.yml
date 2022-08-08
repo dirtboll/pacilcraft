@@ -1,0 +1,274 @@
+Digger:
+  fullname: Digger
+  shortname: D
+  description: '&6Earns money for terraforming the world.'
+  ChatColour: GOLD
+  chat-display: shortjob
+  max-level: 200
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*5)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Digger - Easy
+      Objectives:
+      - Break;dirt;128
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a100'
+    '2':
+      Name: Digger - Easy
+      Objectives:
+      - Break;grass_block;64
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a100'
+    '3':
+      Name: Digger - Easy
+      Objectives:
+      - Break;coarse_dirt;64
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a100'
+    '4':
+      Name: Digger - Easy
+      Objectives:
+      - Break;gravel;96
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a100'
+    '5':
+      Name: Digger - Easy
+      Objectives:
+      - Break;sand;128
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a150'
+    '6':
+      Name: Digger - Easy
+      Objectives:
+      - Break;red_sand;96
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a125'
+    '7':
+      Name: Digger - Easy
+      Objectives:
+      - Break;SOUL_SAND;128
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a150'
+    '8':
+      Name: Digger - Easy
+      Objectives:
+      - Break;podzol;64
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a175'
+    '9':
+      Name: Digger - Medium
+      Objectives:
+      - Break;dirt;196
+      - Break;grass_block;128
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a200'
+    '10':
+      Name: Digger - Medium
+      Objectives:
+      - Break;sand;196
+      - Break;red_sand;128
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a200'
+    '11':
+      Name: Digger - Medium
+      Objectives:
+      - Break;coarse_dirt;128
+      - Break;podzol;96
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a250'
+    '12':
+      Name: Digger - Medium
+      Objectives:
+      - Break;clay;128
+      - Break;gravel;128
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a250'
+    '13':
+      Name: Digger - Hard
+      Objectives:
+      - Break;dirt;384
+      RewardCommands:
+      - eco give [playerName] 300
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a300'
+    '14':
+      Name: Digger - Hard
+      Objectives:
+      - Break;grass_block;256
+      RewardCommands:
+      - eco give [playerName] 350
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a350'
+    '15':
+      Name: Digger - Hard
+      Objectives:
+      - Break;sand;384
+      RewardCommands:
+      - eco give [playerName] 300
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&6&l* &7Complete the following quest'
+      - '&6&l* &7and you will get rewarded.'
+      - ''
+      - '&6Options:'
+      - '&6&l* &7Reward: &a&l$&a300'
+  Gui:
+    Item: GOLDEN_SHOVEL
+  Break:
+    red_sand:
+      income: 0.15
+      points: 0.05
+      experience: 0.1
+    coarse_dirt:
+      income: 0.2
+      points: 0.08
+      experience: 0.15
+    dirt:
+      income: 0.05
+      points: 0.02
+      experience: 0.04
+    grass_block:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    gravel:
+      income: 0.2
+      points: 0.08
+      experience: 0.15
+    sand:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    clay:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+    SOUL_SAND:
+      income: 0.15
+      points: 0.1
+      experience: 0.25
+    PODZOL:
+      income: 0.2
+      points: 0.08
+      experience: 0.15
+    CRIMSON_NYLIUM:
+      income: 0.2
+      points: 0.1
+      experience: 0.2
+    WARPED_NYLIUM:
+      income: 0.2
+      points: 0.1
+      experience: 0.2
+    SOUL_SOIL:
+      income: 0.15
+      points: 0.15
+      experience: 0.25
+    rooted_dirt:
+      income: 0.06
+      points: 0.03
+      experience: 0.05
+    moss_block:
+      income: 0.2
+      points: 0.05
+      experience: 0.2

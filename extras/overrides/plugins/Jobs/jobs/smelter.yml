@@ -1,0 +1,259 @@
+Smelter:
+  fullname: Smelter
+  shortname: Sm
+  description: '&7Earns money from smelting items.'
+  ChatColour: GRAY
+  chat-display: shortjob
+  max-level: 200
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*5)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Smelter - Easy
+      Objectives:
+      - Smelt;cactus_green;48
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a100'
+    '2':
+      Name: Smelter - Easy
+      Objectives:
+      - Smelt;iron_ingot;32
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a125'
+    '3':
+      Name: Smelter - Easy
+      Objectives:
+      - Smelt;gold_ingot;16
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a150'
+    '4':
+      Name: Smelter - Easy
+      Objectives:
+      - Smelt;glass;64
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a150'
+    '5':
+      Name: Smelter - Easy
+      Objectives:
+      - Smelt;stone;64
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a125'
+    '6':
+      Name: Smelter - Easy
+      Objectives:
+      - Smelt;nether_brick;64
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a150'
+    '7':
+      Name: Smelter - Easy
+      Objectives:
+      - Smelt;brick;64
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a175'
+    '8':
+      Name: Smelter - Easy
+      Objectives:
+      - Smelt;copper_ingot;48
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a150'
+    '9':
+      Name: Smelter - Medium
+      Objectives:
+      - Smelt;cactus_green;128
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a200'
+    '10':
+      Name: Smelter - Medium
+      Objectives:
+      - Smelt;iron_ingot;80
+      RewardCommands:
+      - eco give [playerName] 225
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a225'
+    '11':
+      Name: Smelter - Medium
+      Objectives:
+      - Smelt;gold_ingot;64
+      RewardCommands:
+      - eco give [playerName] 275
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a275'
+    '12':
+      Name: Smelter - Medium
+      Objectives:
+      - Smelt;glass;192
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a250'
+    '13':
+      Name: Smelter - Medium
+      Objectives:
+      - Smelt;stone;256
+      RewardCommands:
+      - eco give [playerName] 275
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a275'
+    '14':
+      Name: Smelter - Medium
+      Objectives:
+      - Smelt;nether_brick;256
+      RewardCommands:
+      - eco give [playerName] 275
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a275'
+    '15':
+      Name: Smelter - Medium
+      Objectives:
+      - Smelt;brick;128
+      RewardCommands:
+      - eco give [playerName] 275
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a275'
+    '16':
+      Name: Smelter - Medium
+      Objectives:
+      - Smelt;copper_ingot;96
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&7&l* &7Complete the following quest'
+      - '&7&l* &7and you will get rewarded.'
+      - ''
+      - '&7Options:'
+      - '&7&l* &7Reward: &a&l$&a250'                        
+  Gui:
+    Item: furnace
+  Smelt:
+    copper_ingot:
+      income: 0.1
+      points: 0.05
+      experience: 0.17    
+    stone:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    iron_ingot:
+      income: 0.1
+      points: 0.05
+      experience: 0.17
+    gold_ingot:
+      income: 0.2
+      points: 0.1
+      experience: 0.3
+    cactus_green:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+    glass:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+    nether_brick:
+      income: 0.03
+      points: 0.02
+      experience: 0.03
+    brick:
+      income: 0.05
+      points: 0.01
+      experience: 0.05                                                            

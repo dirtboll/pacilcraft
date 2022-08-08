@@ -1,8 +1,0 @@
-/extras/mods/Iris.jar,
-https://dev.bukkit.org/projects/drivebackupv2/files/latest,
-https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,
-https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,
-https://dev.bukkit.org/projects/worldguard/files/latest,
-https://ci.athion.net/job/FastAsyncWorldEdit/252/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.3-SNAPSHOT-252.jar
-https://dev.bukkit.org/projects/beaconwaypoints/files/latest
-https://ci.codemc.io/job/SkinsRestorer/job/SkinsRestorerX-DEV/lastSuccessfulBuild/artifact/build/libs/SkinsRestorer.jar

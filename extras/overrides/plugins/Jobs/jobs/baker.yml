@@ -1,0 +1,206 @@
+Baker:
+  fullname: Baker
+  shortname: baseincome
+  description: '&eEarns money from baking food'
+  ChatColour: YELLOW
+  chat-display: shortjob
+  max-level: 200
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*5)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Baker - Easy
+      Objectives:
+      - Craft;bread;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a125'
+    '2':
+      Name: Baker - Easy
+      Objectives:
+      - Craft;cake;2
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '3':
+      Name: Baker - Easy
+      Objectives:
+      - Craft;cookie;64
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a150'
+    '4':
+      Name: Baker - Easy
+      Objectives:
+      - Craft;golden_apple;4
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a175'
+    '5':
+      Name: Baker - Medium
+      Objectives:
+      - Craft;enchanted_golden_apple;1
+      RewardCommands:
+      - eco give [playerName] 275
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a275'
+    '6':
+      Name: Baker - Easy
+      Objectives:
+      - Craft;golden_carrot;8
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a125'
+    '7':
+      Name: Baker - Easy
+      Objectives:
+      - Craft;pumpkin_pie;2
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '8':
+      Name: Baker - Easy
+      Objectives:
+      - Craft;mushroom_stew;3
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '9':
+      Name: Baker - Easy
+      Objectives:
+      - Craft;rabbit_stew;3
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '10':
+      Name: Baker - Easy
+      Objectives:
+      - Craft;beetroot_soup;3
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '11':
+      Name: Baker - Easy
+      Objectives:
+      - Craft;suspicious_stew;3
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+  Gui:
+    Item: CAKE
+  Craft: 
+    bread:
+      income: 0.1
+      points: 0.05
+      experience: 0.15
+    cake:
+      income: 0.5
+      points: 0.2
+      experience: 0.5
+    cookie:
+      income: 0.15
+      points: 0.07
+      experience: 0.2
+    golden_apple:
+      income: 0.5
+      points: 0.2
+      experience: 0.5
+    enchanted_golden_apple:
+      income: 10.0
+      points: 5.0
+      experience: 25.0
+    golden_carrot:
+      income: 0.4
+      points: 0.1
+      experience: 0.4            
+    pumpkin_pie:
+      income: 0.5
+      points: 0.2
+      experience: 0.5
+    mushroom_stew:
+      income: 0.3
+      points: 0.1
+      experience: 0.35
+    rabbit_stew:
+      income: 0.3
+      points: 0.1
+      experience: 0.35
+    beetroot_soup:
+      income: 0.3
+      points: 0.1
+      experience: 0.35
+    suspicious_stew:
+      income: 0.3
+      points: 0.1
+      experience: 0.35                                                                                                                 
