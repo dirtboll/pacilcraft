@@ -1,0 +1,594 @@
+Hunter:
+  fullname: Hunter
+  shortname: H
+  description: '&cEarns money killing animals and monsters.'
+  ChatColour: RED
+  chat-display: shortjob
+  max-level: 200
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*5)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Chicken;25
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a100'
+    '2':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Cow;25
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a100'
+    '3':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Pig;25
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a100'
+    '4':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Sheep;25
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a100'
+    '5':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Rabbit;25
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a100'
+    '6':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Skeleton;50
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a150'
+    '7':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Zombie;50
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a150'
+    '8':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Spider;50
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a150'
+    '9':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Creeper;25
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a150'
+    '10':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Blaze;25
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a150'
+    '11':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Piglin;25
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a150'
+    '12':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Phantom;25
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a175'
+    '13':
+      Name: Hunter - Easy
+      Objectives:
+      - Kill;Enderman;15
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a175'
+    '14':
+      Name: Hunter - Medium
+      Objectives:
+      - Kill;Chicken;75
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a250'
+    '15':
+      Name: Hunter - Medium
+      Objectives:
+      - Kill;Cow;75
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a250'
+    '16':
+      Name: Hunter - Medium
+      Objectives:
+      - Kill;Pig;75
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a250'
+    '17':
+      Name: Hunter - Medium
+      Objectives:
+      - Kill;Sheep;75
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a250'
+    '18':
+      Name: Hunter - Medium
+      Objectives:
+      - Kill;Rabbit;75
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a250'
+    '19':
+      Name: Hunter - Medium
+      Objectives:
+      - Kill;Skeleton;100
+      RewardCommands:
+      - eco give [playerName] 275
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a275'
+    '20':
+      Name: Hunter - Medium
+      Objectives:
+      - Kill;Zombie;100
+      RewardCommands:
+      - eco give [playerName] 275
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a275'
+    '21':
+      Name: Hunter - Medium
+      Objectives:
+      - Kill;Spider;100
+      RewardCommands:
+      - eco give [playerName] 275
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a275'
+    '22':
+      Name: Hunter - Medium
+      Objectives:
+      - Kill;Creeper;50
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a250'
+    '23':
+      Name: Hunter - Medium
+      Objectives:
+      - Kill;Blaze;50
+      RewardCommands:
+      - eco give [playerName] 275
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a275'
+    '24':
+      Name: Hunter - Medium
+      Objectives:
+      - Kill;Piglin;50
+      RewardCommands:
+      - eco give [playerName] 275
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a275'
+    '25':
+      Name: Hunter - Hard
+      Objectives:
+      - Kill;Phantom;50
+      RewardCommands:
+      - eco give [playerName] 300
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a300'
+    '26':
+      Name: Hunter - Hard
+      Objectives:
+      - Kill;Enderman;30
+      RewardCommands:
+      - eco give [playerName] 300
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&c&l* &7Complete the following quest'
+      - '&c&l* &7and you will get rewarded.'
+      - ''
+      - '&cOptions:'
+      - '&c&l* &7Reward: &a&l$&a300'
+  Gui:
+    Item: GOLDEN_SWORD
+  Kill:
+    Chicken:
+      income: 2.5
+      points: 0.5
+      experience: 1.5
+    Cow:
+      income: 2.75
+      points: 0.6
+      experience: 1.75
+    Pig:
+      income: 2.5
+      points: 0.5
+      experience: 1.5
+    Sheep:
+      income: 2.75
+      points: 0.6
+      experience: 1.75
+    Wolf:
+      income: 5.0
+      points: 1.5
+      experience: 3.5
+    Creeper:
+      income: 4.0
+      points: 1.0
+      experience: 2.5
+    Skeleton:
+      income: 3.5
+      points: 0.75
+      experience: 2.0
+    Spider:
+      income: 3.5
+      points: 0.75
+      experience: 2.0
+    Zombie:
+      income: 3.0
+      points: 0.65
+      experience: 1.75
+    BLAZE:
+      income: 4.0
+      points: 1.75
+      experience: 4.5
+    CAVE_SPIDER:
+      income: 3.5
+      points: 0.75
+      experience: 2.0
+    ENDERMAN:
+      income: 4.0
+      points: 0.75
+      experience: 3.75
+    GHAST:
+      income: 12.5
+      points: 4.0
+      experience: 10
+    GIANT:
+      income: 250.0
+      points: 25
+      experience: 100.0
+    IRON_GOLEM:
+      income: 10.0
+      points: 3.0
+      experience: 6.5
+    mushroom_cow:
+      income: 4.0
+      points: 1.5
+      experience: 3.50
+    PIGLIN:
+      income: 3.0
+      points: 0.5
+      experience: 2.75
+    SILVERFISH:
+      income: 3.0
+      points: 0.65
+      experience: 1.75
+    SNOWMAN:
+      income: 1.5
+      points: 0.75
+      experience: 1.0
+    SQUID:
+      income: 1.0
+      points: 0.5
+      experience: 0.75
+    RABBIT:
+      income: 2.5
+      points: 0.5
+      experience: 1.5
+    GUARDIAN:
+      income: 2.0
+      points: 0.5
+      experience: 2.0
+    SHULKER:
+      income: 4.5
+      points: 1.5
+      experience: 2.5
+    PHANTOM:
+      income: 3.75
+      points: 0.5
+      experience: 2.25
+    DROWNED:
+      income: 3.0
+      points: 0.65
+      experience: 1.75
+    HUSK:
+      income: 3.0
+      points: 0.65
+      experience: 1.75
+    WITHER:
+      income: 125.0
+      points: 15
+      experience: 75.0
+    ENDER_DRAGON:
+      income: 500.0
+      points: 40.0
+      experience: 250.0
+    Player:
+      income: 1.5
+      points: 0.25
+      experience: 0.75      
+    BAT:
+      income: 1.0
+      points: 0.1
+      experience: 0.75
+    CAT:
+      income: 4.0
+      points: 1.0
+      experience: 3.0
+    OCELOT:
+      income: 4.0
+      points: 1.0
+      experience: 3.0
+    HORSE:
+      income: 3.25
+      points: 0.8
+      experience: 2.5
+    DONKEY:
+      income: 3.25
+      points: 0.8
+      experience: 2.5
+    MULE:
+      income: 3.25
+      points: 0.8
+      experience: 2.5
+    FOX:
+      income: 5.0
+      points: 1.5
+      experience: 3.5
+    COD:
+      income: 1.0
+      points: 0.2
+      experience: 1.0
+    SALMON:
+      income: 1.5
+      points: 0.4
+      experience: 2.0
+    TURTLE:
+      income: 2.0
+      points: 0.6
+      experience: 2.5
+    PARROT:
+      income: 1.0
+      points: 0.2
+      experience: 1.0
+    STRIDER:
+      income: 3.5
+      points: 1.0
+      experience: 2.75
+    ENDERMITE:
+      income: 3.0
+      points: 0.65
+      experience: 1.75
+    ELDER_GUARDIAN:
+      income: 62.5
+      points: 7.5
+      experience: 37.5
+    EVOKER:
+      income: 4.0
+      points: 0.9
+      experience: 3.75
+    HOGLIN:
+      income: 9.0
+      points: 2.5
+      experience: 6
+    ZOGLIN:
+      income: 10.0
+      points: 3.0
+      experience: 6.5
+    ILLUSIONER:
+      income: 5.0
+      points: 1.0
+      experience: 4.5 
+    MAGMA_CUBE:
+      income: 3.25
+      points: 0.7
+      experience: 2.25
+    SLIME:
+      income: 3.0
+      points: 0.65
+      experience: 2.0
+    PILLAGER:
+      income: 3.5
+      points: 0.8
+      experience: 3.0
+    RAVAGER:
+      income: 12.5
+      points: 3.5
+      experience: 8.0
+    STRAY:
+      income: 3.5
+      points: 0.75
+      experience: 2.0
+    VEX:
+      income: 2.5
+      points: 0.6
+      experience: 2.75
+    VINDICATOR:
+      income: 3.5
+      points: 0.8
+      experience: 3.0
+    WITCH:
+      income: 3.75
+      points: 0.85
+      experience: 4.0
+    WITHER_SKELETON:
+      income: 5.0
+      points: 1.5
+      experience: 5.5
+    Goat:
+      income: 2.75
+      points: 0.6
+      experience: 1.75
+    AXOLOTL:
+      income: 2.0
+      points: 0.6
+      experience: 2.5
+    GLOW_SQUID:
+      income: 1.5
+      points: 0.4
+      experience: 2.0                        
+

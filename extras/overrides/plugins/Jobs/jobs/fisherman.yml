@@ -1,0 +1,191 @@
+Fisherman:
+  fullname: Fisherman
+  shortname: Fi
+  description: '&9Earns money from fishing.'
+  ChatColour: BLUE
+  chat-display: shortjob
+  max-level: 200
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*5)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Fisherman - Easy
+      Objectives:
+      - Fish;cod;16
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '2':
+      Name: Fisherman - Easy
+      Objectives:
+      - Fish;salmon;16
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a150'
+    '3':
+      Name: Fisherman - Easy
+      Objectives:
+      - Fish;tropical_fish;16
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a175'
+    '4':
+      Name: Fisherman - Medium
+      Objectives:
+      - Fish;pufferfish;16
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a200'
+    '5':
+      Name: Fisherman - Medium
+      Objectives:
+      - Fish;cod;48
+      RewardCommands:
+      - eco give [playerName] 225
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a225'
+    '6':
+      Name: Fisherman - Medium
+      Objectives:
+      - Fish;salmon;32
+      RewardCommands:
+      - eco give [playerName] 250
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a250'
+    '7':
+      Name: Fisherman - Medium
+      Objectives:
+      - Fish;tropical_fish;32
+      RewardCommands:
+      - eco give [playerName] 275
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a275'
+    '8':
+      Name: Fisherman - Hard
+      Objectives:
+      - Fish;pufferfish;32
+      RewardCommands:
+      - eco give [playerName] 300
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a300'
+    '9':
+      Name: Fisherman - Hard
+      Objectives:
+      - Fish;cod;96
+      RewardCommands:
+      - eco give [playerName] 350
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a350'
+    '10':
+      Name: Fisherman - Hard
+      Objectives:
+      - Fish;salmon;64
+      RewardCommands:
+      - eco give [playerName] 375
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a375'
+    '11':
+      Name: Fisherman - Hard
+      Objectives:
+      - Fish;tropical_fish;64
+      RewardCommands:
+      - eco give [playerName] 375
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a375'
+    '12':
+      Name: Fisherman - Impossible
+      Objectives:
+      - Fish;pufferfish;64
+      RewardCommands:
+      - eco give [playerName] 400
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a400'
+  Gui:
+    Item: fishing_rod
+  Fish:
+    cod:
+      income: 0.8
+      points: 0.1
+      experience: 0.5
+    salmon:
+      income: 1.75
+      points: 0.35
+      experience: 1.25
+    tropical_fish:
+      income: 2.5
+      points: 0.6
+      experience: 2.0
+    pufferfish:
+      income: 2.0
+      points: 0.35
+      experience: 1.5

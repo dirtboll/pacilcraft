@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+    builder:
+        image: gradle:jdk17-jammy
+        user: "1000:1000"
+        command: >
+            bash -c "cd
+            && rm -rf Iris/
+            && git clone https://github.com/VolmitSoftware/Iris
+            && cd Iris
+            && gradle setup
+            && gradle iris
+            && rm -rf /build
+            && cp -R build/** /build"
+        volumes:
+            - ./build:/build
+        tty: TRUE
+        stdin_open: TRUE

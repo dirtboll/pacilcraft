@@ -1,0 +1,289 @@
+Cooker:
+  fullname: Cooker
+  shortname: baseincome
+  description: '&cEarns money from cooking food'
+  ChatColour: RED
+  chat-display: shortjob
+  max-level: 200
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*5)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Cooker - Easy
+      Objectives:
+      - Smelt;cooked_beef;32
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '2':
+      Name: Cooker - Easy
+      Objectives:
+      - Smelt;cooked_porkchop;32
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '3':
+      Name: Cooker - Easy
+      Objectives:
+      - Smelt;cooked_cod;32
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '4':
+      Name: Cooker - Easy
+      Objectives:
+      - Smelt;cooked_salmon;32
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '5':
+      Name: Cooker - Easy
+      Objectives:
+      - Smelt;cooked_chicken;32
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '6':
+      Name: Cooker - Easy
+      Objectives:
+      - Smelt;cooked_mutton;32
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '7':
+      Name: Cooker - Easy
+      Objectives:
+      - Smelt;cooked_rabbit;32
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '8':
+      Name: Cooker - Easy
+      Objectives:
+      - Smelt;baked_potato;32
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '9':
+      Name: Cooker - Easy
+      Objectives:
+      - Smelt;popped_chorus_fruit;32
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a175'
+    '10':
+      Name: Cooker - Medium
+      Objectives:
+      - Smelt;cooked_beef;96
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a200'
+    '11':
+      Name: Cooker - Medium
+      Objectives:
+      - Smelt;cooked_porkchop;96
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a200'
+    '12':
+      Name: Cooker - Medium
+      Objectives:
+      - Smelt;cooked_cod;96
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a200'
+    '13':
+      Name: Cooker - Medium
+      Objectives:
+      - Smelt;cooked_salmon;96
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a200'
+    '14':
+      Name: Cooker - Medium
+      Objectives:
+      - Smelt;cooked_chicken;96
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a200'
+    '15':
+      Name: Cooker - Medium
+      Objectives:
+      - Smelt;cooked_mutton;96
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a200'
+    '16':
+      Name: Cooker - Medium
+      Objectives:
+      - Smelt;cooked_rabbit;96
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a200'
+    '17':
+      Name: Cooker - Medium
+      Objectives:
+      - Smelt;baked_potato;96
+      RewardCommands:
+      - eco give [playerName] 200
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a200'
+    '18':
+      Name: Cooker - Medium
+      Objectives:
+      - Smelt;popped_chorus_fruit;64
+      RewardCommands:
+      - eco give [playerName] 275
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a275'      
+  Gui:
+    Item: COOKED_BEEF
+  Smelt:
+    cooked_beef:
+      income: 0.07
+      points: 0.04
+      experience: 0.07
+    cooked_porkchop:
+      income: 0.07
+      points: 0.04
+      experience: 0.07
+    cooked_cod:
+      income: 0.07
+      points: 0.04
+      experience: 0.07
+    cooked_salmon:
+      income: 0.07
+      points: 0.04
+      experience: 0.07      
+    cooked_chicken:
+      income: 0.07
+      points: 0.04
+      experience: 0.07
+    cooked_mutton:
+      income: 0.07
+      points: 0.04
+      experience: 0.07
+    cooked_rabbit:
+      income: 0.07
+      points: 0.04
+      experience: 0.07
+    baked_potato:
+      income: 0.05
+      points: 0.02
+      experience: 0.06    
+    popped_chorus_fruit:
+      income: 0.15
+      points: 0.06
+      experience: 0.2                                                                                                                 

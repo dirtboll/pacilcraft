@@ -1,0 +1,384 @@
+Taster:
+  fullname: Taster
+  shortname: Ta
+  description: '&dEarns money by tasting food'
+  ChatColour: PINK
+  chat-display: shortjob
+  max-level: 200
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*5)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;apple;8
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '2':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;mushroom_stew;3
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '3':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;bread;16
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a125'
+    '4':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;cooked_beef;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a125'
+    '5':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;cooked_porkchop;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a125'
+    '6':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;golden_apple;4
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a150'
+    '7':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;cooked_cod;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a125'
+    '8':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;cooked_salmon;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a125'
+    '9':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;cake;1
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '10':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;cookie;32
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '11':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;melon_slice;32
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '12':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;dried_kelp;16
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a150'
+    '13':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;cooked_chicken;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a125'
+    '14':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;baked_potato;32
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a125'
+    '15':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;rabbit_stew;3
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '16':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;pumpkin_pie;8
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a175'
+    '17':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;cooked_rabbit;24
+      RewardCommands:
+      - eco give [playerName] 125
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a125'
+    '18':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;chorus_fruit;16
+      RewardCommands:
+      - eco give [playerName] 175
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a175'
+    '19':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;beetroot_soup;3
+      RewardCommands:
+      - eco give [playerName] 100
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a100'
+    '20':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;sweet_berries;16
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a150'
+    '21':
+      Name: Taster - Easy
+      Objectives:
+      - Eat;glow_berries;16
+      RewardCommands:
+      - eco give [playerName] 150
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - '&9&l* &7Complete the following quest'
+      - '&9&l* &7and you will get rewarded.'
+      - ''
+      - '&9Options:'
+      - '&9&l* &7Reward: &a&l$&a150'                                                      
+  Gui:
+    Item: APPLE
+  Eat:
+    apple:
+      income: 0.06
+      points: 0.01
+      experience: 0.06
+    mushroom_stew:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+    bread:
+      income: 0.05
+      points: 0.01
+      experience: 0.05
+    cooked_porkchop:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    golden_apple:
+      income: 0.25
+      points: 0.1
+      experience: 0.3
+    enchanted_golden_apple:
+      income: 5.0
+      points: 2.5
+      experience: 15.0
+    cooked_cod:
+      income: 0.03
+      points: 0.02
+      experience: 0.03
+    cooked_salmon:
+      income: 0.04
+      points: 0.02
+      experience: 0.04
+    cake:
+      income: 0.15
+      points: 0.05
+      experience: 0.25
+    cookie:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    melon_slice:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    dried_kelp:
+      income: 0.03
+      points: 0.02
+      experience: 0.03
+    cooked_beef:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    cooked_chicken:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    baked_potato:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    pumpkin_pie:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+    cooked_rabbit:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    rabbit_stew:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    cooked_mutton:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+    chorus_fruit:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+    beetroot_soup:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+    sweet_berries:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+    glow_berries:
+      income: 0.05
+      points: 0.02
+      experience: 0.05                                                                                                                                                                                                                                      
