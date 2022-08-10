@@ -49,8 +49,6 @@ services:
         https://dev.bukkit.org/projects/crackshot/files/latest,
         https://mypet-plugin.de/download/MyPet/dev,
         
-        https://github.com/WeaponMechanics/MechanicsMain/releases/download/v1.9.1/MechanicsCore-1.4.1-BETA.jar
-        https://github.com/WeaponMechanics/MechanicsMain/releases/download/v1.9.1/WeaponMechanics-1.9.1-BETA.jar
         https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsX-2.19.4.jar,
         https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXSpawn-2.19.4.jar,
         https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,
@@ -59,7 +57,7 @@ services:
       VANILLATWEAKS_FILE: /extras/vanillatweaks/datapacks.json,/extras/vanillatweaks/tweaks.json,/extras/vanillatweaks/resourcepacks.json
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
       RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
-      RESOURCE_PACK_SHA1: 94c33060b53580a4ee17ff8ef96d4ff3fb535ea5
+      RESOURCE_PACK_SHA1: 5c89c3e27015ba711c4f131bcf74e7d4c96e77d1
       DATAPACKS: >-
         /extras/datapacks/Trumpet-Skeleton-[datapack]-v1.0.0.zip
 
