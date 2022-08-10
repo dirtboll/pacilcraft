@@ -176,6 +176,12 @@ Global:
         MinCoord: 500
         CenterX: 0
         CenterZ: 0
+      otherworld:
+        Enabled: true
+        MaxCoord: 1000
+        MinCoord: 500
+        CenterX: 0
+        CenterZ: 0
     # How long force player to wait before using command again.
     Cooldown: 5
     # How many times to try find correct location for teleportation.
@@ -393,7 +399,7 @@ Global:
   # Setting this to true creates residence around players placed chest if he don't have any.
   # Only once every server restart if he still don't have any residence
   NewPlayer:
-    Use: true
+    Use: false
     # Setting this to true, residence will be created for free
     # By setting to false, money will be taken from player, if he has them
     Free: true

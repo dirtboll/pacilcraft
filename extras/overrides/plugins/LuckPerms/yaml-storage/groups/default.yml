@@ -94,3 +94,4 @@ permissions:
 - jobs.command.info
 - jobs.command.leaveall
 - jobs.command.help
+- MyPet.command.capturehelper
