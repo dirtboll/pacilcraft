@@ -1,24 +1,22 @@
 version: '3.8'
 services:
   pacilkrep:
-    image: itzg/minecraft-server
+    image: itzg/minecraft-server:java17-graalvm-ce
     container_name: pacilkrep
-    entrypoint: "bash /entrypoint.sh"
+    entrypoint: ["/bin/bash", "/entrypoint.sh"]
     environment:
       EULA: "TRUE"
       TYPE: "PURPUR"
-      VERSION: "${VERSION:-LATEST}"
+      VERSION: "1.19.2"
       TZ: "Asia/Jakarta"
       CONSOLE: "FALSE"
-      STOP_SERVER_ANNOUNCE_DELAY: 60
+      STOP_SERVER_ANNOUNCE_DELAY: 30
       OVERRIDE_SERVER_PROPERTIES: "TRUE"
       
       MEMORY: "${MEMORY:-6G}"
-      # JVM_XX_OPTS: "-XX:MaxRAMPercentage=75"
       JVM_DD_OPTS: "disable.watchdog:TRUE" #Paper
       USE_AIKAR_FLAGS: "TRUE"
       ENABLE_ROLLING_LOGS: "TRUE"
-      ENABLE_AUTOPAUSE: "TRUE"
       STOP_DURATION: 300
       USE_SIMD_FLAGS: "TRUE"
       LOG_TIMESTAMP: "TRUE"
@@ -37,7 +35,7 @@ services:
       #DiceFurniture,Dynmap,Furnlib-Protectionlib,gsit,luckperms,multiverse,nexauth,plugmanx,durability,clearlagg,CoordinatesHud,Graves,Vault,armor-stand-editor,jobs-reborn,CMILib,PlaceholderAPI,LuckPermsChat,PAPIConditional
       SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135,74166,68271,69915,74208,34315,94503,4216,87610,6245,68965,82920" 
       MODS: >-
-        /extras/mods
+        /extras/mods,
         https://dev.bukkit.org/projects/drivebackupv2/files/latest,
         https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,
         https://dev.bukkit.org/projects/worldguard/files/latest,
@@ -47,13 +45,14 @@ services:
         https://dev.bukkit.org/projects/signshop/files/latest,
         https://ci.codemc.io/job/Updated-NoCheatPlus/job/Updated-NoCheatPlus/lastSuccessfulBuild/artifact/target/NoCheatPlus.jar,
         https://dev.bukkit.org/projects/crackshot/files/latest,
-        https://mypet-plugin.de/download/MyPet/dev,
+        https://github.com/nulli0n/NexEngine-spigot/releases/latest/download/NexEngine.jar,
         
-        https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsX-2.19.4.jar,
-        https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXSpawn-2.19.4.jar,
+        https://github.com/MyPetORG/MyPet/releases/download/3.12-SNAPSHOT-B1725/MyPet-3.12-SNAPSHOT-B1725.jar,
+        https://github.com/EssentialsX/Essentials/releases/latest/download/EssentialsX-2.19.7.jar,
+        https://github.com/EssentialsX/Essentials/releases/latest/download/EssentialsXSpawn-2.19.7.jar,
         https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,
-        https://ci.athion.net/job/FastAsyncWorldEdit/252/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.3-SNAPSHOT-252.jar,
-        https://zrips.net/Residence/files/Residence5.0.1.7.jar,
+        https://ci.athion.net/job/FastAsyncWorldEdit/lastStableBuild/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.9-SNAPSHOT-294.jar,
+        https://zrips.net/Residence/files/Residence5.0.3.0.jar,
       VANILLATWEAKS_FILE: /extras/vanillatweaks/datapacks.json,/extras/vanillatweaks/tweaks.json,/extras/vanillatweaks/resourcepacks.json
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
       RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
@@ -61,7 +60,6 @@ services:
       DATAPACKS: >-
         /extras/datapacks/Trumpet-Skeleton-[datapack]-v1.0.0.zip
 
-        
       # RCON_CMDS_STARTUP: |-
       #   iris pregen start 1000 world=otherworld
       # RCON_CMDS_LAST_DISCONNECT: |-
