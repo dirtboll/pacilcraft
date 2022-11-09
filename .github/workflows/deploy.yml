@@ -32,5 +32,5 @@ jobs:
               }]
             }'
         run: |
-          echo ${{ env.JSON }}
+          echo ${{ toJSON(env.JSON) }}
           echo /home/${{ env.SERVER_USERNAME }}/repos/${{ env.APP_DIR }}
