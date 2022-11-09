@@ -21,7 +21,7 @@ jobs:
               "text": "Build `${{ env.APP_DIR }}` on ${{ github.event_name }} to branch `${{ github.base_ref }}` succeed",
               "attachments": [{ 
                 "text": "Triggered by: `${{ github.actor }}` from branch `${{ github.ref }}`", 
-                "color": "#2dd36f\", 
+                "color": "#2dd36f", 
                 "attachment_type": "default", 
                 "actions": [{
                   "name": "commit", 
