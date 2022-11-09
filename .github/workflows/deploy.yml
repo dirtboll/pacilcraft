@@ -1,0 +1,39 @@
+on:
+  push:
+    branches:
+      - plugin-overhaul
+      
+env:
+  APP_DIR: chat-experience-canvas
+  APP_NAME: ${{ env.APP_DIR }}
+  SERVER_USERNAME: node16
+  APP_PATH: /home/${{ env.SERVER_USERNAME }}/repos/${{ env.APP_DIR }}
+  SLACK_CHANNEL_ID: C02ESBKUZ5H
+  
+jobs:
+  deploy_develop:
+    name: Deploy to develop server
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - env:
+          JSON: '
+            {
+              "channel": "${{ env.SLACK_CHANNEL_ID }}",
+              "text": "Build `${{ env.APP_DIR }}` on ${{ github.event_name }} to branch `${{ github.base_ref }}` succeed",
+              "attachments": [{ 
+                "text": "Triggered by: `${{ github.actor }}` from branch `${{ github.ref }}`", 
+                "color": "#2dd36f\", 
+                "attachment_type": "default", 
+                "actions": [{
+                  "name": "commit", 
+                  "text": "Show commit", 
+                  "type": "button", 
+                  "url": "${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}"
+                }]
+              }]
+            }'
+          run: |
+            echo ${{ env.JSON }}
+            echo ${{ env.APP_PATH }}
+            echo ${{ env.APP_NAME }}
