@@ -4,16 +4,16 @@ on:
       - plugin-overhaul
       
 env:
-  APP_DIR: chat-experience-canvas
-  APP_NAME: ${{ env.APP_DIR }}
+  APP_NAME: chat-experience-canvas
   SERVER_USERNAME: node16
-  APP_PATH: /home/${{ env.SERVER_USERNAME }}/repos/${{ env.APP_DIR }}
   SLACK_CHANNEL_ID: C02ESBKUZ5H
   
 jobs:
   deploy_develop:
     name: Deploy to develop server
     runs-on: ubuntu-latest
+    env:
+      APP_PATH: /home/${{ env.SERVER_USERNAME }}/repos/${{ env.APP_NAME }}
     steps:
       - uses: actions/checkout@v2
       - env:
