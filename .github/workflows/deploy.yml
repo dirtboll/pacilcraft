@@ -12,6 +12,8 @@ jobs:
   deploy_develop:
     name: Deploy to develop server
     runs-on: ubuntu-latest
+    env:
+      APP_NAME: '${{ env.APP_DIR }}'
     steps:
       - uses: actions/checkout@v2
       - env:
