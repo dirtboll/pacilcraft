@@ -56,7 +56,7 @@ services:
       VANILLATWEAKS_FILE: /extras/vanillatweaks/datapacks.json,/extras/vanillatweaks/tweaks.json
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
       RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
-      RESOURCE_PACK_SHA1: 5c89c3e27015ba711c4f131bcf74e7d4c96e77d1
+      RESOURCE_PACK_SHA1: 00c40c5b58ab17b8390670feb4e65b739371821a
       DATAPACKS: >-
         /extras/datapacks/Trumpet-Skeleton-[datapack]-v1.0.0.zip
 
