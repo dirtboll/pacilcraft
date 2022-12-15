@@ -7,7 +7,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "PURPUR"
-      VERSION: "1.19.2"
+      VERSION: "1.19.3"
       TZ: "Asia/Jakarta"
       CONSOLE: "FALSE"
       STOP_SERVER_ANNOUNCE_DELAY: 30
@@ -32,28 +32,28 @@ services:
       ONLINE_MODE: "FALSE"
       SPAWN_PROTECTION: 16
 
-      #DiceFurniture,Dynmap,Furnlib-Protectionlib,gsit,luckperms,multiverse,nexauth,plugmanx,durability,clearlagg,CoordinatesHud,Graves,Vault,armor-stand-editor,jobs-reborn,CMILib,PlaceholderAPI,LuckPermsChat,PAPIConditional
-      SPIGET_RESOURCES: "6006,274,9368,62325,28140,390,88015,88135,74166,68271,69915,74208,34315,94503,4216,87610,6245,68965,82920" 
+      #DiceFurniture,Furnlib-Protectionlib,gsit,luckperms,multiverse,nexauth,plugmanx,durability,clearlagg,CoordinatesHud,Graves,Vault,armor-stand-editor,jobs-reborn,CMILib,PlaceholderAPI,LuckPermsChat,PAPIConditional
+      SPIGET_RESOURCES: "6006,9368,62325,28140,390,88015,88135,74166,68271,69915,74208,34315,94503,4216,87610,6245,68965,82920" 
       MODS: >-
         /extras/mods,
-        https://dev.bukkit.org/projects/drivebackupv2/files/latest,
+        https://mediafilez.forgecdn.net/files/4167/109/Dynmap-3.5-beta-1-spigot.jar,
+        https://mediafilez.forgecdn.net/files/3680/816/DriveBackupV2.jar,
         https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar,
-        https://dev.bukkit.org/projects/worldguard/files/latest,
-        https://dev.bukkit.org/projects/beaconwaypoints/files/latest,
+        https://mediafilez.forgecdn.net/files/3677/516/worldguard-bukkit-7.0.7-dist.jar,
+        https://mediafilez.forgecdn.net/files/3936/552/BeaconWaypoints-1.5.0.jar,
         https://ci.codemc.io/job/SkinsRestorer/job/SkinsRestorerX-DEV/lastSuccessfulBuild/artifact/build/libs/SkinsRestorer.jar,
-        https://dev.bukkit.org/projects/orebfuscator-anti-x-ray/files/latest,
-        https://dev.bukkit.org/projects/signshop/files/latest,
+        https://mediafilez.forgecdn.net/files/4161/120/orebfuscator-plugin-5.3.2.jar,
+        https://mediafilez.forgecdn.net/files/3591/923/SignShop-3.6.2.jar,
         https://ci.codemc.io/job/Updated-NoCheatPlus/job/Updated-NoCheatPlus/lastSuccessfulBuild/artifact/target/NoCheatPlus.jar,
-        https://dev.bukkit.org/projects/crackshot/files/latest,
+        https://mediafilez.forgecdn.net/files/3151/915/CrackShot.jar,
         https://github.com/nulli0n/NexEngine-spigot/releases/latest/download/NexEngine.jar,
-        
-        https://github.com/MyPetORG/MyPet/releases/download/3.12-SNAPSHOT-B1725/MyPet-3.12-SNAPSHOT-B1725.jar,
-        https://github.com/EssentialsX/Essentials/releases/latest/download/EssentialsX-2.19.7.jar,
-        https://github.com/EssentialsX/Essentials/releases/latest/download/EssentialsXSpawn-2.19.7.jar,
-        https://github.com/XZot1K/SimplePortals/releases/latest/download/SimplePortals-1.7.1.jar,
-        https://ci.athion.net/job/FastAsyncWorldEdit/lastStableBuild/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.9-SNAPSHOT-294.jar,
-        https://zrips.net/Residence/files/Residence5.0.3.0.jar,
-      VANILLATWEAKS_FILE: /extras/vanillatweaks/datapacks.json,/extras/vanillatweaks/tweaks.json,/extras/vanillatweaks/resourcepacks.json
+        https://github.com/MyPetORG/MyPet/releases/download/3.12-SNAPSHOT-B1729/MyPet-3.12-SNAPSHOT-B1729.jar,
+        https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsX-2.19.7.jar,
+        https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXSpawn-2.19.7.jar,
+        https://github.com/XZot1K/SimplePortals/releases/download/1.7.1/SimplePortals-1.7.1.jar,
+        https://ci.athion.net/job/FastAsyncWorldEdit/lastStableBuild/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.5.1-SNAPSHOT-331.jar,
+        https://zrips.net/Residence/files/Residence5.1.0.1.jar,
+      VANILLATWEAKS_FILE: /extras/vanillatweaks/datapacks.json,/extras/vanillatweaks/tweaks.json
       REMOVE_OLD_VANILLATWEAKS: "TRUE"
       RESOURCE_PACK: "https://raw.githubusercontent.com/dirtboll/pacilcraft/master/resourcepack.zip"
       RESOURCE_PACK_SHA1: 5c89c3e27015ba711c4f131bcf74e7d4c96e77d1
@@ -73,6 +73,8 @@ services:
       - ./entrypoint.sh:/entrypoint.sh
       - ./data:/data
       - ./extras:/extras
+      - ./start-setupModpack:/start-setupModpack:ro
+      - ./start-spiget:/start-spiget:ro
     tty: TRUE
     stdin_open: TRUE
     restart: unless-stopped
